@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>header</title>
+</head>
+<body>
+    <div class="header">
+        <div class="overlap">
+          <div class="overlap-group">
+            <div class="logo-frame">
+              <img class="logo-text" src="./img/Logo+Text.svg" />
+              <div class="logo-input">
+                <div class="logo-input-frame">
+                  <div class="logo-img">
+                    <img src="./img/Icon-select.svg" alt="select" class="menu-line-horizontal ">
+                </div>
+                  <div class="logo-selectbox-frame">
+                    <label class="logo-selectbox" for="categories"></label>
+                    <select class="logo-selectbox" name="categories" id="categories">
+                      <option value="All Categories">All Categories</option>
+                      <option value="Category 1">Category 1</option>
+                      <option value="Category 2">Category 2</option>
+                      <option value="Category 3">Category 3</option>
+                    </select> 
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="search-frame">
+              <div class="div-color">
+                  <!-- <label class="category-frame" for="Search"></label> -->
+                  <select class=" search-frame-wrapper" name="Search" id="Search">
+                    <option value="All ">All </option>
+                    <option value="Category 1">Category 1</option>
+                    <option value="Category 2">Category 2</option>
+                    <option value="Category 3">Category 3</option>
+                  </select> 
+              </div>
+
+              <div class="div-wrapper-textbox">
+                <div class="search-frame-input">
+                  <img class="search-img" src="img/SearchIcon.svg" /> 
+                  <label for="search"></label>
+                  <input class="search-text" id="search" placeholder="Search" type="text" />
+                </div>
+              </div>
+
+              <button class="button">
+                <span class="button-text">Search</span>
+            </button>
+            </div>
+          </div>
+
+          <div class="navbar">
+            <a href="#" class="text-wrapper-2">Home</a>
+            <div>
+              <label class="text-wrapper-2" for="shop-selectbox"></label>
+
+              <select class="shop-selectbox" name="shop-selectbox" id="shop-selectbox">
+                <option class="shop-selectbox" value="Shop">Shop</option>
+                <option class="shop-selectbox" value="A">A</option>
+                <option class="shop-selectbox" value="B">B</option>
+                <option class="shop-selectbox" value="C">C</option>
+              </select> 
+              
+
+            </div>
+            <a href="#" class="text-wrapper-2">About Us</a>
+            <a href="#" class="text-wrapper-2">Blog</a>
+            <a href="#" class="text-wrapper-2">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="login-frame">
+          <div class="shortcut-frame">
+            <img class="img" src="img/SearchIcon.svg" />
+            <img class="img" src="img/like.svg" />
+            <img class="img" src="img/Shop.svg" />
+            <div class="cart-item">
+              <div class="overlap-group-2">
+                2
+                <!-- <div class="text-wrapper-3">2</div> -->
+              </div>
+            </div>
+          </div>
+          <button id="loginBtn" class="button-wrapper">
+            <!-- <span class="text-wrapper">Login</span> -->
+            Login
+            <!-- <button class="text-wrapper">Login</button> -->
+        <!-- </button> -->
+        </div>
+    </div>
+
+      <!-- Modal content -->
+    <div id="loginModal" class="modal modal-content">
+      <div class="modal-header">
+        <span class="close">
+          <img class="close-img" src="./img/remove.svg" alt="close">
+        </span>
+        <div class="Welcome">Welcome 👋</div>
+        <div class="text">Please login here</div>
+        </div>
+          <div class="modal-body">
+            <form action="" class="form">
+              <label class="label" for="EmailAddress">Email Address</label>
+              <input
+                type="email"
+                value="kristin.watson@example.com"
+                class="textbox"
+                id="EmailAddress"
+                required
+              />
+
+              <label class="label" for="Password">Password</label>
+              <input
+                type="password"
+                class="textbox"
+                id="Password"
+                
+              />
+
+
+              <div class="forgot-frame">
+                <input class="checkbox" type="checkbox" name="Remember" id="remember" value="Remember Me" />
+                <label class="remember-text" for="remember">Remember Me</label>
+
+                <a href="#" class="forgot-pass" >
+                  <p class="forgot-pass-text">Forgot Password?</p>
+                </a>
+              </div>
+
+              <div class="button-frame">
+                <button class="buttonlog login-text" type="submit">
+                  Login
+                </button>
+
+                <div>
+                  <button class="buttonreg regester-text">Regester</button>
+              </div>
+            </form>
+          </div>
+    </div>
+    <div class="ortext">Or Login With</div>
+
+    <div class="modal-footer">
+      <div class="login-with">
+      <button class="gbutton login-textg">
+        <img class="g-img" src="img/google.svg" />
+        Login with Google      
+      </button>
+      <button class="applebtn login-texta">
+        <img class="a-img" src="img/apple.svg" />
+        Login with Apple
+      </button>
+      </div>
+    </div>
+    </div>
+    <!-- main page -->
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<script src="./script.js"></script>
+
+
+
+</body>
+</html>
