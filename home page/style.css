@@ -2178,3 +2178,34 @@
 
 }
 
+/* --------------------register--------------- */
+.remember-text{
+  width: 266px;
+  height: 30px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #101316;
+}
+
+.ortextreg{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  width: 380px;
+  height: 24px;
+  margin-top: 10px;
+
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #101316;
+}
+
+

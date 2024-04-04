@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Register</title>
+</head>
+<body>
+    <button id="loginBtn" class="button-wrapper"></button>
+    <div id="loginModal" class="modal modal-content">
+        <div class="modal-header">
+            <span class="close">
+                <img class="close-img" src="./img/remove.svg" alt="close">
+            </span>
+            <div class="Welcome">Create New Account</div>
+            <div class="text">Please enter details</div>
+        </div>
+        <div class="modal-body">
+            <form action="" class="form">
+                <label class="label" for="Name">Name</label>
+                <input
+                    type="text"
+                    placeholder="Your name"
+                    class="textbox"
+                    id="Name"
+                    required
+                />
+
+                <label class="label" for="EmailAddress">Email Address</label>
+                <input
+                    type="email"
+                    placeholder="something@example.com"
+                    class="textbox"
+                    id="EmailAddress"
+                    required
+                />
+
+                <label class="label" for="Password">Password</label>
+                <input
+                    type="password"
+                    class="textbox"
+                    id="Password"
+                    required
+                />
+
+
+                <div class="forgot-frame">
+                    <input class="checkbox" type="checkbox" name="agree" id="agree" value="agree" required />
+                    <label class="remember-text" for="agree">I agree to the Terms & Conditions</label>
+                </div>
+
+                <div>
+                    <button class="buttonlog login-text ">Regester</button>
+                </div>
+            </form>
+        </div>
+        <div class="ortextreg">Or Login With</div>
+
+        <div class="modal-footer">
+            <div class="login-with">
+                <button class="gbutton login-textg">
+                    <img class="g-img" src="img/google.svg" />
+                    Login with Google      
+                </button>
+                <button class="applebtn login-texta">
+                    <img class="a-img" src="img/apple.svg" />
+                    Login with Apple
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
