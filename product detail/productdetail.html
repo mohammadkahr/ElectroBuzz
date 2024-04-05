@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>detail page</title>
+</head>
+<body>
+      <!-- ---------------------header-------------------- -->
+    <div class="header">
+        <div class="overlap">
+          <div class="overlap-group">
+            <div class="logo-frame">
+              <img class="logo-text" src="./img/Logo+Text.svg" />
+              <div class="logo-input">
+                <div class="logo-input-frame">
+                  <div class="logo-img">
+                    <img src="./img/Icon-select.svg" alt="select" class="menu-line-horizontal ">
+                </div>
+                  <div class="logo-selectbox-frame">
+                    <label class="logo-selectbox" for="categories"></label>
+                    <select class="logo-selectbox" name="categories" id="categories">
+                      <option value="All Categories">All Categories</option>
+                      <option value="Category 1">Category 1</option>
+                      <option value="Category 2">Category 2</option>
+                      <option value="Category 3">Category 3</option>
+                    </select> 
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="search-frame">
+              <div class="div-color">
+                  <!-- <label class="category-frame" for="Search"></label> -->
+                  <select class=" search-frame-wrapper" name="Search" id="Search">
+                    <option value="All ">All </option>
+                    <option value="Category 1">Category 1</option>
+                    <option value="Category 2">Category 2</option>
+                    <option value="Category 3">Category 3</option>
+                  </select> 
+              </div>
+
+              <div class="div-wrapper-textbox">
+                <div class="search-frame-input">
+                  <img class="search-img" src="img/SearchIcon.svg" /> 
+                  <label for="search"></label>
+                  <input class="search-text" id="search" placeholder="Search" type="text" />
+                </div>
+              </div>
+
+              <button class="button">
+                <span class="button-text">Search</span>
+            </button>
+            </div>
+          </div>
+
+          <div class="navbar">
+            <a href="#" class="text-wrapper-2">Home</a>
+            <div>
+              <label class="text-wrapper-2" for="shop-selectbox"></label>
+
+              <select class="shop-selectbox" name="shop-selectbox" id="shop-selectbox">
+                <option class="shop-selectbox" value="Shop">Shop</option>
+                <option class="shop-selectbox" value="A">A</option>
+                <option class="shop-selectbox" value="B">B</option>
+                <option class="shop-selectbox" value="C">C</option>
+              </select> 
+              
+
+            </div>
+            <a href="#" class="text-wrapper-2">About Us</a>
+            <a href="#" class="text-wrapper-2">Blog</a>
+            <a href="#" class="text-wrapper-2">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="login-frame">
+          <div class="shortcut-frame">
+            <img class="img" src="img/SearchIcon.svg" />
+            <img class="img" src="img/like.svg" />
+            <img class="img" src="img/Shop.svg" />
+            <div class="cart-item">
+              <div class="overlap-group-2">
+                2
+                <!-- <div class="text-wrapper-3">2</div> -->
+              </div>
+            </div>
+          </div>
+          <button id="loginBtn" class="button-wrapper">
+            <!-- <span class="text-wrapper">Login</span> -->
+            Login
+            <!-- <button class="text-wrapper">Login</button> -->
+          </button>
+        </div>
+    </div>
+
+      <!------------------- Modal content ------------------->
+    <div id="loginModal" class="modal modal-content">
+      <div class="modal-header">
+        <span class="close">
+          <img class="close-img" src="./img/remove.svg" alt="close">
+        </span>
+        <div class="Welcome">Welcome 👋</div>
+        <div class="text">Please login here</div>
+        </div>
+          <div class="modal-body">
+            <form action="" class="form">
+              <label class="label" for="EmailAddress">Email Address</label>
+              <input
+                type="email"
+                placeholder="something@example.com"
+                class="textbox"
+                id="EmailAddress"
+                required
+              />
+
+              <label class="label" for="Password">Password</label>
+              <input
+                type="password"
+                class="textbox"
+                id="Password"
+                
+              />
+
+
+              <div class="forgot-frame">
+                <input class="checkbox" type="checkbox" name="Remember" id="remember" value="Remember Me" />
+                <label class="remember-text" for="remember">Remember Me</label>
+
+                <a href="#" class="forgot-pass" >
+                  <p class="forgot-pass-text">Forgot Password?</p>
+                </a>
+              </div>
+
+              <div class="button-frame">
+                <button class="buttonlog login-text" type="submit">
+                  Login
+                </button>
+
+                <div>
+                  <button class="buttonreg regester-text">Regester</button>
+              </div>
+            </form>
+          </div>
+    </div>
+    <div class="ortext">Or Login With</div>
+
+    <div class="modal-footer">
+      <div class="login-with">
+      <button class="gbutton login-textg">
+        <img class="g-img" src="img/google.svg" />
+        Login with Google      
+      </button>
+      <button class="applebtn login-texta">
+        <img class="a-img" src="img/apple.svg" />
+        Login with Apple
+      </button>
+      </div>
+    </div>
+    </div>
+    <!-- -------------------detail page-------------------- -->
+    <div class="detail-page-frame">
+        <div class="product-detail-frame">
+            <div class="product-detail-addres">
+                <p class="product-detail-addres-text">Home</p>
+                <img class="product-detail-addres-icon" src="./img/direction-right.svg" alt="then">
+                <p class="product-detail-addres-text">Shop</p>
+                <img class="product-detail-addres-icon" src="./img/direction-right.svg" alt="then">
+                <p class="product-detail-addres-text">Apple iPhone 14 Pro</p>
+            </div>
+
+            <div class="product-detail">
+                <div class="product-detail-mainimg-frame">
+                    <img class="product-detail-mainimg" src="./img/image 16.svg" alt="Product Image">
+                </div>
+
+                <div class="product-detail-otherimg-main-frame">
+                    <div class="product-detail-otherimg-frame">
+                        <img class="product-detail-otherimg" src="./img/image 16.svg" alt="Product Image">
+                    </div>
+
+                    <div class="product-detail-otherimg-frame">
+                        <img class="product-detail-otherimg" src="./img/image 16.svg" alt="Product Image">
+                    </div>
+
+                    <div class="product-detail-otherimg-frame">
+                        <img class="product-detail-otherimg" src="./img/image 16.svg" alt="Product Image">
+                    </div>
+
+                    <div class="product-detail-otherimg-frame">
+                        <img class="product-detail-otherimg" src="./img/image 16.svg" alt="Product Image">
+                    </div>
+
+                </div>
+
+                <div class="product-detail-maintext-frame">
+                    <div class="product-detail-text-header">Apple iPhone 14 Pro</div>
+                    <div class="product-detail-text-stars">
+                        <img class="product-detail-text-stars"  src="./img/stars.svg" alt="Rate">
+                    </div>
+
+                    <div class="product-detail-text-rate">5.0 (121 Reviews)</div>
+                    <div class="product-detail-text-price">$1999.00</div>
+                    <div class="product-detail-text-disc">
+                        It is a long established fact that a reader will be distracted by the <br>
+                        readable content of a page when looking at its layout. The point of <br>
+                        using Lorem Ipsum is that it has a more-or-less normal distribution.
+                    </div>
+
+                    <div class="product-detail-text-color">
+                        Color
+                        <div class="product-detail-text-color-box-frame">
+                            <button class="product-detail-text-color-box1"></button>
+                            <button class="product-detail-text-color-box2"></button>
+                            <button class="product-detail-text-color-box3"></button>
+                            <button class="product-detail-text-color-box4"></button>
+                        </div>
+                    </div>
+
+                    <div class="product-detail-text-addcart-frame">
+                        <div class="product-detail-text-addcart-number-box">
+                            <div class="product-detail-text-addcart-minus-button">-</div>
+                            <label for="product-detail-text-addcart-val"></label>
+                            <input class="product-detail-text-addcart-input" id="product-detail-text-addcart-val" type="number" value="0" />
+                            <div class="product-detail-text-addcart-plus-button">+</div>
+                        </div>
+
+                        <button class="product-detail-text-addcart-button" >Add to Cart</button>
+                        <img class="product-detail-text-addcart-like" src="./img/likeButton.svg" alt="Like">
+                    </div>
+
+                    <div class="product-detail-text-share">
+                        Share
+                        <div class="product-detail-share-iconFrame">
+                            <img class="product-detail-share-iconimg" src="./img/facebookb.svg" alt="facebook">
+                            <img class="product-detail-share-iconimg" src="./img/twitterb.svg" alt="twitter">
+                            <img class="product-detail-share-iconimg" src="./img/instagramb.svg" alt="instagram">
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="product-descriptions">
+                <div class="product-descriptions-nav">
+                    <a class="product-descriptions-nav-text" href="#">Descriptions </a>
+                    <a class="product-descriptions-nav-text" href="#">Additional Information </a>
+                    <a class="product-descriptions-nav-text" href="#">Reviews </a>
+                </div>
+
+                <div class="product-descriptions-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos 
+                        temporibus voluptatibus necessitatibus enim inventore reiciendis sequi
+                         iste dicta tenetur modi magnam saepe alias, quae quia nulla maiores.
+                          Fugit debitis ducimus, exercitationem unde in sed aliquam laborum 
+                          accusantium. Distinctio adipisci ratione voluptatem, maxime cupiditate
+                           aliquam impedit fugiat debitis facere soluta?
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, unde.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="relatedproducts">
+            <div class="relatedproducts-header">Related Products</div>
+
+            <div class="relatedproducts-products">
+                <div class="relatedproducts-products-p1">
+                    <div class="relatedproducts-products-p1-img">
+                        <img src="img/image 22.svg" alt="Picture">
+                    </div>
+                    <div class="relatedproducts-products-p1-dis">
+                        <div class="relatedproducts-products-p1-dis-h">
+                            Apple iPhone 14 Plus
+                        </div>
+                        <img class="relatedproducts-products-p1-dis-s" src="./img/stars.svg" alt="Rate">
+                        <div class="relatedproducts-products-p1-dis-p">
+                            $850.00
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relatedproducts-products-p1">
+                    <div class="relatedproducts-products-p1-img">
+                        <img src="img/image 26.svg" alt="Picture">
+                    </div>
+                    <div class="relatedproducts-products-p1-dis">
+                        <div class="relatedproducts-products-p1-dis-h">
+                            Xiaomi Fimi X8 Mini                        </div>
+                        <img class="relatedproducts-products-p1-dis-s" src="./img/stars.svg" alt="Rate">
+                        <div class="relatedproducts-products-p1-dis-p">
+                            $650.00
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relatedproducts-products-p1">
+                    <div class="relatedproducts-products-p1-img">
+                        <img src="img/image 19.svg" alt="Picture">
+                    </div>
+                    <div class="relatedproducts-products-p1-dis">
+                        <div class="relatedproducts-products-p1-dis-h">
+                            Apple iPad Mini 6 Wi-Fi
+                        </div>
+                        <img class="relatedproducts-products-p1-dis-s" src="./img/stars.svg" alt="Rate">
+                        <div class="relatedproducts-products-p1-dis-p">
+                            $500.00
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relatedproducts-products-p1">
+                    <div class="relatedproducts-products-p1-img">
+                        <img src="img/image 25.png" alt="Picture">
+                    </div>
+                    <div class="relatedproducts-products-p1-dis">
+                        <div class="relatedproducts-products-p1-dis-h">
+                            Asus ROG Delta S
+                        </div>
+                        <img class="relatedproducts-products-p1-dis-s" src="./img/stars.svg" alt="Rate">
+                        <div class="relatedproducts-products-p1-dis-p">
+                            $250.00
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+
+    <!-- ---------------------footer-------------------- -->
+
+    <div class="footer-frame" >
+      <div class="new-footer-frame"></div>
+      <div class="electro-style">
+          <img src="./img/electro.svg" alt="logo">
+      </div>
+
+      <div class="phone" >
+        <div class="phone-img" >
+          <div class="phone-img2"></div>
+          <img src="./img/calling.svg" alt="calling">
+        </div>
+        <div class="phone-text">
+          <a class="phone-text" href="callto:(316) 555-0116">(316) 555-0116</a>
+        </div>
+      </div>
+
+      <div class="mailto" >
+        <div class="mailto-img">
+          <div class="mailto-img2"></div>
+          <!-- <div style="width: 20px; height: 8px; left: 2px; top: 7px; position: absolute; border: 1.50px white solid"></div> -->
+          <img src="./img/gmail.svg" alt="mailto">
+      </div>
+        <div class="mail-text">
+          <a class="mail-text" href="mailto:electro@example.com">electro@example.com</a>
+          
+      </div>
+      </div>
+
+      <div class="location">
+          <div class="location-img" >
+            <!-- <div style="width: 6px; height: 6px; left: 9px; top: 8px; position: absolute; border-radius: 9999px; border: 1.50px white solid"></div> -->
+            <div class="location-img2" ></div>
+              <img src="./img/location.svg" alt="location">
+          </div>
+          <div class="location-text">
+              4140 Parker Rd. Allentown, <br/>New Mexico 31134
+          </div>
+        </div>
+
+      <div class="information">
+        <div class="information-header">Information</div>
+        <div class="information-links-frame">
+          <div class="information-links">
+              <span><a href="#" class="information-links">My Account</a></span>
+              
+          </div>
+          <div class="information-links">
+              <span><a href="#" class="information-links">Login</a></span>
+              
+          </div>
+          <div class="information-links">
+              <span><a href="#" class="information-links">My Cart</a></span>
+              
+          </div>
+          <div class="information-links">
+              <span><a href="#" class="information-links">My Wishlist</a></span>
+          </div>
+          <div class="information-links">
+              <span><a href="#" class="information-links">Checkout</a></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="service-header" >Service</div>
+        <div class="service-link-frame">
+          <div >
+              <span><a href="#" class="service-links">About Us</a></span>
+          </div>
+          <div >
+              <span><a href="#" class="service-links">Careers</a></span>
+          </div>
+          <div >
+              <span><a href="#" class="service-links">Delivery Information</a></span>
+          </div>
+          <div >
+              <span><a href="#" class="service-links">Privacy Policy</a></span>
+          </div>
+          <div >
+              <span><a href="#" class="service-links">Terms & Conditions</a></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="subscribe-frame" >
+        <div class="subscribe-text">
+          <div class="subscribe-text1">Subscribe</div>
+          <div class="subscribe-text2">Enter your email below to be the first to <br>know about new collections.</div>
+        </div>
+
+        <div class="email-frame">
+          <div class="email-textbox">
+            <div class="email-box">
+              <div class="email-img">
+                  <img src="./img/gmail.svg" alt="Email">
+              </div>
+
+              <div class="email-form">
+                  <label class="email-form" for="EmailAddress"></label>
+                  <input
+                  type="email"
+                  placeholder="Email Address"
+                  class="email-color"
+                  id="EmailAddress"
+                  />
+              </div>
+            </div>
+            <div>
+              <div >
+                <button class="submit-butten" type="submit">
+                <img src="./img/arrow-right.svg" alt="submit">
+                </button>
+              </div>
+                  
+                  <!-- <a href="#" class="button-2" >Login</a> -->
+              <!-- <div style="width: 8px; height: 12px; left: 8px; top: 6px; position: absolute; border-radius: 2px; border: 1.50px white solid"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+      
+      <div class="pic-frame">
+          <div class="visa-frame">
+              <div >
+                  <a href="#"><img src="./img/Visa.svg" alt="Visa"> </a>
+              </div>
+            </div>
+          <div class="mastercard-frame">
+              <div >
+                  <a href="#"><img src="./img/Mastercard.svg" alt="Mastercard"> </a>
+              </div>
+          </div>
+          <div class="gplay-frame">
+              <div >
+                  <a href="#"><img src="./img/GooglePay.svg" alt="GooglePay"> </a>
+              </div>
+          </div>
+          <div class="amex-frame">
+              <div >
+                  <a href="#"><img src="./img/Amex.svg" alt="Amex"> </a>
+              </div>
+          </div>
+          <div class="paypal-frame">
+              <div >
+                  <a href="#"><img src="./img/PayPal.svg" alt="PayPal"> </a>
+              </div>
+          </div>
+      </div>
+
+      <div class="media" >
+        <div class="media-pic-frame">
+          <a href="#" ><img src="./img/facebook.svg" alt="facebook"></a>
+        </div>
+        <div class="media-pic-frame">
+          <a href="#" ><img src="./img/instagram.svg" alt="facebook"></a>
+        </div>
+        <div class="media-pic-frame">
+          <a href="#" ><img src="./img/twitter.svg" alt="facebook"></a>
+        </div>
+      </div>
+      
+      <div class="copy">©2023 Electro All Rights are reserved️ </div>
+
+    </div>
+
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
