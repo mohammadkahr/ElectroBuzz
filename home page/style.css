@@ -2334,3 +2334,95 @@
   cursor: pointer;
 
 }
+
+/* ------------------------password change------------ */
+
+
+.modal-pass-change {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  width: 392px;
+  height: 396px;
+  top: 314px;
+  left: 524px;
+  gap: 0px;
+  border-radius: 16px ;
+  opacity: 0px; 
+  color: white;
+  background-color: #FFFFFF;
+  border: 1px solid #A5A9AC33;
+  box-shadow: 0px 8px 8px -4px #10182805;
+  box-shadow: 0px 10px 40px -4px #10182805;
+  padding: 20px;
+  
+}
+
+.modal-content-pass-change {
+  width: 392px;
+  height: 396px;
+  top: 314px;
+  left: 524px;
+  opacity: 0px;
+  padding: 20px;
+  opacity: 0px;
+  border-radius: 16px;
+  position: absolute;
+  z-index: 1;
+  background-color: #FFFFFF;
+  color: white;
+  border: 1px solid #A5A9AC33;
+  box-shadow: 0px 8px 8px -4px #10182805;
+  box-shadow: 0px 10px 40px -4px #10182805;
+  
+}
+
+.password-change-icon{
+  position: absolute;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 108px;
+  height: 108px;
+  top: 40px;
+  left: 170px;
+  opacity: 0px;
+  z-index: 2;
+  margin-left: 142;
+
+}
+
+.password-change-text{
+  margin-top: 150px;
+  margin-left: 25px;
+  width: 352px;
+  height: 142px;
+  gap: 10px;
+  opacity: 0px;
+
+}
+
+.password-change-text-h{
+  width: 352px;
+  height: 72px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #101316;
+}
+
+.password-change-text-p{
+  width: 352px;
+  height: 60px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #101316;
+}

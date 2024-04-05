@@ -1,0 +1,748 @@
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+
+    width: 420px;
+    height: 674px;
+    top: 197px;
+    left: 510px;
+    padding: 20px 0px 0px 0px;
+    gap: 0px;
+    border-radius: 16px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    width: 420px;
+    height: 674px;
+    left: 510px;
+    top: 197px;
+    border-radius: 16px;
+    border: 1px;
+    color: white;
+    background-color: #FFFFFF;
+    border: 1px solid #A5A9AC33;
+    box-shadow: 0px 8px 8px -4px #10182805;
+    box-shadow: 0px 10px 40px -4px #10182805;
+
+
+  }
+
+  /* Modal Content */
+  .modal-content {
+    width: 400px;
+    height: 580px;
+    top: 197px;
+    left: 510px;
+    padding: 20px 0px 0px 0px;
+    gap: 0px;
+    border-radius: 16px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border-radius: 16px;
+    border: 1px;
+    position: absolute;
+    z-index: 1;
+    background-color: #FFFFFF;
+    color: white;
+    border: 1px solid #A5A9AC33;
+    box-shadow: 0px 8px 8px -4px #10182805;
+    box-shadow: 0px 10px 40px -4px #10182805;
+  }
+
+  /* The Close Button */
+  .close {
+    background-color: white;
+    color: black;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+    width: Fixed (34px)px;
+    height: Fixed (34px)px;
+    top: 153px;
+    left: 896px;
+    padding: 20px 0px 0px 0px;
+    gap: 10px;
+    border-radius: 5px 0px 0px 0px;
+    opacity: 0px;
+
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close-img{
+    width: 18px;
+    height: 18px;
+    padding: 5.26px;
+    gap: 0px;
+    opacity: 0px;
+
+  }
+
+
+  .modal-header {
+    display: block;
+    margin-left: 10px;
+    width: 380px;
+    height: 72px;
+    top: 20px;
+    left: 20px;
+    gap: 0px;
+    opacity: 0px;
+
+  }
+
+  .modal-body {
+    width: 380px;
+    height: 340px;
+    top: 108px;
+    left: 20px;
+    gap: 30px;
+    opacity: 0px;
+
+    margin-left: 10px;
+
+  }
+
+
+
+  .Welcome{
+    width: 380px;
+    height: 42px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: left;
+    background: #ffffff;
+    color: #101316;
+    margin-left: 10px;
+    cursor: default;
+  }
+
+  .text{
+    width: 380px;
+    height: 30px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #A5A9AC;
+    margin-left: 10px;
+    cursor: default;
+
+  }
+
+
+  .form{
+    width:380px;
+    height: 216px;
+    gap: 10px;
+    opacity: 0px;
+
+  }
+
+  .label{
+    margin-left: 10px;
+    width: 380px;
+    height: 20px;
+    top: 2px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #101316;
+    
+    
+  }
+
+  .textbox{
+    display: block;
+    width: 350px;
+    height: 40px;
+    top: 24px;
+    padding: 10px 0px 10px 20px;
+    /* gap: 10px; */
+    border-radius: 10px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #1C4E8E;
+    border-radius: 10px;
+    margin-right: 10px;
+
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    /* line-height: 30px; */
+    text-align: left;
+    color: #101316;
+
+    
+  }
+
+  .forgot-frame{
+    display: flex;
+    align-content: center;
+    /* align-items: center; */
+    width: 380px;
+    height: 40px;
+    /* gap: 30px; */
+    opacity: 0px;
+
+  }
+
+  .checkbox{
+    /* align-items: center; */
+    width: 24px;
+    height: 24px;
+    padding: 2px 0px 0px 0px;
+    gap: 0px;
+    opacity: 0px;
+    color: #101316;
+    background-color: #1C4E8E;
+  }
+
+  .remember-text{
+    width: 121px;
+    height: 30px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #101316;
+
+    
+  }
+
+  .forgot-pass{
+    text-decoration: none;
+    width: 220px;
+    height: 30px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: right;
+    color: #101316;
+    text-align: right;
+    display: inline;
+    align-content: center;
+    justify-content: center;
+
+  }
+
+  .forgot-pass-text{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: right;
+    color: #101316;
+    text-align: right;
+    width: auto;
+    height: auto;
+    margin-top: 3px;
+  }
+
+  .button-frame{
+    align-items: center;
+    width: 380px;
+    height: 122px;
+    gap: 10px;
+    opacity: 0px;
+
+  }
+
+  
+
+  .regester-frame{
+    width: 380px;
+    height: 56px;
+    padding: 20px 0px 0px 0px;
+    border-radius: 10px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #1C4E8E;
+    background-color: white;
+
+
+  }
+
+  .login-text{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #FFFFFF;
+  }
+
+  .buttonlog{
+    display: flex;
+    justify-content: center;
+
+    width: 380px;
+    height: 56px;
+    padding: 20px 0px 0px 0px;
+    border-radius: 10px 0px 0px 0px;
+    opacity: 0px;
+    background: #1C4E8E;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+
+  }
+  .buttonreg{
+    display: flex;
+    justify-content: center;
+
+    width: 380px;
+    height: 56px;
+    border-radius: 10px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #1C4E8E;   
+    border-radius: 10px; 
+    margin-top: 10px;
+  }
+
+  .regester-text{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #1C4E8E;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .ortext{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    width: 380px;
+    height: 24px;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #101316;
+  }
+
+  .modal-footer{
+    display: inline-block;
+
+    width: 380px;
+    height: 122px;
+    top: 532px;
+    left: 20px;
+    gap: 10px;
+    opacity: 0px;
+
+
+  }
+
+  .login-with{
+    width: 380px;
+    height: 122px;
+    top: 532px;
+    left: 20px;
+    gap: 10px;
+    opacity: 0px;
+    margin-left: 10px;
+
+  }
+
+  .gbutton{
+    display: flex;
+    justify-content: center;
+    width: 380px;
+    height: 56px;
+    padding: 20px 0px 0px 0px;
+    gap: 10px;
+    border-radius: 10px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #A5A9AC33;
+    border-radius: 10px;
+  }
+
+  .g-img{
+      display: flex;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      /* padding: 3px 3.19px 3px 3.17px; */
+      opacity: 0px;
+  }
+
+  .login-textg{
+    opacity: 0px;
+    font-weight: 400;
+    text-align: center;
+    color: #101316;
+    font-family: Montserrat;
+    font-size: 16px;
+  }
+
+  .applebtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 56px;
+    border-radius: 10px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #A5A9AC33;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .a-img{
+    width: 24px;
+    height: 24px;
+    padding: 2px 4.21px 2px 3.5px;
+    opacity: 0px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .login-texta{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    opacity: 0px;
+    color: #101316;
+    font-family: Montserrat;
+    
+  }
+
+  .body{
+    font-family: Montserrat;
+  }
+
+  .button-wrapper {
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    width: 98px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    background: #1C4E8E;
+    color: #FFFFFF;
+    font-family: Montserrat;
+    cursor: pointer;
+  }
+  /* ghabli ha bedon taghir az login copy shode */
+  /* --------------new add------------------- */
+
+  .remember-text{
+    width: 266px;
+    height: 30px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #101316;
+  }
+
+  .ortextreg{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    width: 380px;
+    height: 24px;
+    margin-top: 10px;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #101316;
+  }
+
+
+
+
+  /* --------------------ENTER OTP----------------- */
+  .modal-opt {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    width: 420px;
+    height: 674px;
+    left: 510px;
+    top: 197px;
+    border-radius: 16px;
+    border: 1px;
+    color: white;
+    background-color: #FFFFFF;
+    border: 1px solid #A5A9AC33;
+    box-shadow: 0px 8px 8px -4px #10182805;
+    box-shadow: 0px 10px 40px -4px #10182805;
+    width: 420px;
+    height: 309px;
+    top: 380px;
+    left: 510px;
+    padding: 20px 0px 0px 0px;
+    gap: 0px;
+    border-radius: 16px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    
+  }
+
+  /* Modal Content */
+.modal-content-otp {
+    width: 420px;
+    height: 309px;
+    top: 380px;
+    left: 510px;
+    padding: 20px 0px 0px 0px;
+    gap: 0px;
+    border-radius: 16px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+    border-radius: 16px;
+    border: 1px;
+    position: absolute;
+    z-index: 1;
+    background-color: #FFFFFF;
+    color: white;
+    border: 1px solid #A5A9AC33;
+    box-shadow: 0px 8px 8px -4px #10182805;
+    box-shadow: 0px 10px 40px -4px #10182805;
+}
+
+
+
+.otp-header{
+    width: 380px;
+    height: 42px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: left;
+    color: #101316;
+    margin-left: 20px;
+    margin-top: 2px;
+}
+
+.otp-text-under{
+    width: 380px;
+    height: 60px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #A5A9AC;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+.otp-textbox-frame{
+    width: 380px;
+    height: 60px;
+    gap: 20px;
+    opacity: 0px;
+    margin-left: 20px;
+}
+.otp-textfarme{
+    width: 60px;
+    height: 60px;
+    gap: 20px;
+    opacity: 0px;
+    border-radius: 13px;
+    margin-top: 65px;
+    margin-left: 2px;
+    border-color: #A5A9AC;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.send-otp-btn{
+    width: 380px;
+    height: 56px;
+    /* padding: 20px; */
+    gap: 10px;
+    border-radius: 10px;
+    opacity: 0px;
+    background: #1C4E8E;
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 100px;
+    border-color: #1C4E8E;
+    cursor: pointer;
+
+}
+
+
+
+
+/* ------------------------password change------------ */
+
+
+.modal-pass-change {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    width: 392px;
+    height: 396px;
+    top: 314px;
+    left: 524px;
+    gap: 0px;
+    border-radius: 16px ;
+    opacity: 0px; 
+    color: white;
+    background-color: #FFFFFF;
+    border: 1px solid #A5A9AC33;
+    box-shadow: 0px 8px 8px -4px #10182805;
+    box-shadow: 0px 10px 40px -4px #10182805;
+    padding: 20px;
+    
+  }
+
+.modal-content-pass-change {
+    width: 392px;
+    height: 396px;
+    top: 314px;
+    left: 524px;
+    opacity: 0px;
+    padding: 20px;
+    opacity: 0px;
+    border-radius: 16px;
+    position: absolute;
+    z-index: 1;
+    background-color: #FFFFFF;
+    color: white;
+    border: 1px solid #A5A9AC33;
+    box-shadow: 0px 8px 8px -4px #10182805;
+    box-shadow: 0px 10px 40px -4px #10182805;
+    
+}
+
+.password-change-icon{
+    position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 108px;
+    height: 108px;
+    top: 40px;
+    left: 170px;
+    opacity: 0px;
+    z-index: 2;
+    margin-left: 142;
+
+}
+
+.password-change-text{
+    /* display: flex;
+    align-content: center;
+    justify-content: center; */
+    margin-top: 150px;
+    margin-left: 25px;
+    width: 352px;
+    height: 142px;
+    gap: 10px;
+    opacity: 0px;
+
+}
+
+.password-change-text-h{
+    width: 352px;
+    height: 72px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: #101316;
+}
+
+.password-change-text-p{
+    width: 352px;
+    height: 60px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    /* line-height: 30px; */
+    text-align: center;
+    color: #101316;
+}
+
+
+
+
+.back-to-login-button{
+    position: absolute;
+    width: 352px;
+    height: 56px;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 10px;
+    opacity: 0px;
+    background: #1C4E8E;
+    color: #FFFFFF;
+    border-color: #1C4E8E;
+    cursor: pointer;
+    top: 350px;
+    left: 40px;
+
+}
