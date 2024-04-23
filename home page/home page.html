@@ -7,8 +7,11 @@
     <title>home page</title>
 </head>
 <body>
+
+  <div class="color-grey">
+
       <!-- ---------------------header-------------------- -->
-    <div class="header">
+      <div class="header color-grey ">
         <div class="overlap">
           <div class="overlap-group">
             <div class="logo-frame">
@@ -98,72 +101,9 @@
         </div>
     </div>
 
-      <!------------------- Modal content ------------------->
-    <div id="loginModal" class="modal modal-content">
-      <div class="modal-header">
-        <span class="close">
-          <img class="close-img" src="./img/remove.svg" alt="close">
-        </span>
-        <div class="Welcome">Welcome 👋</div>
-        <div class="text">Please login here</div>
-        </div>
-          <div class="modal-body">
-            <form action="" class="form">
-              <label class="label" for="EmailAddress">Email Address</label>
-              <input
-                type="email"
-                placeholder="something@example.com"
-                class="textbox"
-                id="EmailAddress"
-                required
-              />
 
-              <label class="label" for="Password">Password</label>
-              <input
-                type="password"
-                class="textbox"
-                id="Password"
-                
-              />
-
-
-              <div class="forgot-frame">
-                <input class="checkbox" type="checkbox" name="Remember" id="remember" value="Remember Me" />
-                <label class="remember-text" for="remember">Remember Me</label>
-
-                <a href="#" class="forgot-pass" >
-                  <p class="forgot-pass-text">Forgot Password?</p>
-                </a>
-              </div>
-
-              <div class="button-frame">
-                <button class="buttonlog login-text" type="submit">
-                  Login
-                </button>
-
-                <div>
-                  <button class="buttonreg regester-text">Regester</button>
-              </div>
-            </form>
-          </div>
-    </div>
-    <div class="ortext">Or Login With</div>
-
-    <div class="modal-footer">
-      <div class="login-with">
-      <button class="gbutton login-textg">
-        <img class="g-img" src="img/google.svg" />
-        Login with Google      
-      </button>
-      <button class="applebtn login-texta">
-        <img class="a-img" src="img/apple.svg" />
-        Login with Apple
-      </button>
-      </div>
-    </div>
-    </div>
     <!-- -------------------main page-------------------- -->
-    <div class="main-page-frame">
+    <div class="main-page-frame" >
       <div class="main-page-text-frame">
         <img class="man-with-head" src="./img/young-handsome.svg" alt="man-with-head">
         <div class="image-befor-main-page"></div>
@@ -265,9 +205,11 @@
           <button class="ads-frame-off-btn">50% OFF</button>
           <p class="ads-frame-header-text">Iphone 14 Pro</p>
           <p class="Dontmiss">Don't miss the last opportunity </p>
-          <button class="shop-now-button">Shop Now
-            <img class="arrow-right" src="./img/arrow-right.svg" alt="">
-          </button>
+          <a href="../product detail/productdetail.html" target="_self">
+            <button class="shop-now-button" >Shop Now
+              <img class="arrow-right" src="./img/arrow-right.svg" alt="">
+            </button>
+          </a>
           <img class="ads-img" src="./img/image 16.svg" alt="Iphone">
 
         </div>
@@ -440,10 +382,186 @@
       </div>
     </div>
 
+  </div>
+
+      <!------------------- Modal content ------------------->
+                          <!-- Login -->
+      
+        <div id="background-focuse" class="background-focuse">
+          <div id="loginModal" class="modal modal-content ">
+            <div class="modal-header">
+              <span class="close">
+                <img class="close-img" src="./img/remove.svg" alt="close">
+              </span>
+              <div class="Welcome">Welcome 👋</div>
+              <div class="text">Please login here</div>
+              </div>
+                <div class="modal-body">
+                  <!-- <form action="" class="form"> -->
+                    <label class="label" for="EmailAddress">Email Address</label>
+                    <input
+                      type="email"
+                      placeholder="something@example.com"
+                      class="textbox"
+                      id="EmailAddress" 
+                    />
+      
+                    <label class="label" for="Password">Password</label>
+                    <input
+                      type="password"
+                      class="textbox"
+                      id="Password"
+                      
+                    />
+      
+      
+                    <div class="forgot-frame">
+                      <input class="checkbox" type="checkbox" name="Remember" id="remember" value="Remember Me" />
+                      <label class="remember-text" for="remember">Remember Me</label>
+      
+                      <a href="#" class="forgot-pass" >
+                        <p class="forgot-pass-text">Forgot Password?</p>
+                      </a>
+                    </div>
+      
+                    <div class="button-frame">
+                      <button class="buttonlog login-text" type="submit">
+                        Login
+                      </button>
+      
+                      <div>
+                        <button id="RegBtn" class="buttonreg regester-text">Regester</button>
+                    </div>
+                  <!-- </form> -->
+                </div>
+          </div>
+          <div class="ortext">Or Login With</div>
+      
+          <div class="modal-footer">
+            <div class="login-with">
+            <button class="gbutton login-textg">
+              <img class="g-img" src="img/google.svg" />
+              Login with Google      
+            </button>
+            <button class="applebtn login-texta">
+              <img class="a-img" src="img/apple.svg" />
+              Login with Apple
+            </button>
+            </div>
+          </div>
+          </div>
+        </div>
+      
+                         <!-- Register -->
+      <div id="RegModal" class="modal modal-content">
+          <div class="modal-header">
+              <span class="close">
+                  <img class="close-img" src="./img/remove.svg" alt="close">
+              </span>
+              <div class="Welcome">Create New Account</div>
+              <div class="text">Please enter details</div>
+          </div>
+          <div class="modal-body">
+              <form action="" class="form">
+                  <label class="label" for="Name">Name</label>
+                  <input
+                      type="text"
+                      placeholder="Your name"
+                      class="textbox"
+                      id="Name"
+                  />
+
+                  <label class="label" for="EmailAddress">Email Address</label>
+                  <input
+                      type="email"
+                      placeholder="something@example.com"
+                      class="textbox"
+                      id="EmailAddress"
+                  />
+
+                  <label class="label" for="Password">Password</label>
+                  <input
+                      type="password"
+                      class="textbox"
+                      id="Password"
+                  />
+
+
+                  <div class="forgot-frame">
+                      <input class="checkbox" type="checkbox" name="agree" id="agree" value="agree" required />
+                      <label class="remember-text" for="agree">I agree to the Terms & Conditions</label>
+                  </div>
+
+                  <div>
+                      <button id="OTPBtn" class="buttonlog login-text ">Regester</button>
+                  </div>
+              </form>
+          </div>
+          <div class="ortextreg">Or Login With</div>
+
+          <div class="modal-footer">
+              <div class="login-with">
+                  <button class="gbutton login-textg">
+                      <img class="g-img" src="img/google.svg" />
+                      Login with Google      
+                  </button>
+                  <button class="applebtn login-texta">
+                      <img class="a-img" src="img/apple.svg" />
+                      Login with Apple
+                  </button>
+              </div>
+          </div>
+      </div>
+
+                            <!-- OTP -->
+      <div id="otpModal" class="modal-otp modal-content-otp">
+        <div >
+            <span class="close">
+                <img class="close-img-otp" src="./img/remove.svg" alt="close">
+            </span>
+            <div class="otp-header">Enter OTP</div>
+            <div class="otp-text-under">We have share a code of your registered email
+                 <br> address kristin.watson@example.com
+            </div>
+        </div>
+        
+        <div class="otp-textbox-frame">
+            <label for="number1" ></label>
+            <input type="text" class="otp-textfarme" id="number1" required></input>
+
+            <label for="number2" ></label>
+            <input type="text" class="otp-textfarme" id="number2" required></input>
+            
+            <label for="number3" ></label>
+            <input type="text" class="otp-textfarme" id="number3" required></input>
+            
+            <label for="number4" ></label>
+            <input type="text" class="otp-textfarme" id="number4" required></input>
+            
+            <label for="number5" ></label>
+            <input type="text" class="otp-textfarme" id="number5" required></input>
+        </div>
+
+        <button id="passChangeBtn" class="send-otp-btn">Send OTP</button>
+    </div>
+
+                         <!-- password -->
+    <div id="passChangeModal" class="modal-pass-change modal-content-pass-change">
+        <img class="password-change-icon" src="./img/Lock Icon Successfully.svg" alt="password change">
+        
+        <div class="password-change-text">
+            <p class="password-change-text-h">Password Changed Successfully</p>
+            <p class="password-change-text-p">Your password has been updated successfully</p>
+        </div>
+        
+        <button id="Back_to_Login" class="back-to-login-button">Back to Login</button>
+    </div>
+
+
 
     <!-- ---------------------footer-------------------- -->
 
-    <div class="footer-frame" >
+    <div class="footer-frame " >
       <div class="new-footer-frame"></div>
       <div class="electro-style">
           <img src="./img/electro.svg" alt="logo">
