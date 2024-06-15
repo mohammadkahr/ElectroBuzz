@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-{#    <link rel="stylesheet" href="./style.css" />#}
     <link rel="stylesheet" href="{% static 'myapp/CSS/style_product.css' %}">
     <title>Detail</title>
 </head>
@@ -14,8 +13,7 @@
         <div class="overlap">
           <div class="overlap-group">
             <div class="logo-frame">
-{#              <img class="logo-text" src="./img/Logo+Text.svg" />#}
-              <img class="logo-text" src="{% static 'myapp/img/Logo+Text.svg' %}" />
+              <img class="logo-text" src="{% static 'myapp/img/Logo+Text.svg' %}"  alt=""/>
               <div class="logo-input">
                 <div class="logo-input-frame">
                   <div class="logo-img">
@@ -39,7 +37,6 @@
 
             <div class="search-frame">
               <div class="div-color">
-                  <!-- <label class="category-frame" for="Search"></label> -->
                   <select class=" search-frame-wrapper" name="Search" id="Search">
                     <option value="All ">All </option>
                     <option value="Category 1">Category 1</option>
@@ -50,8 +47,7 @@
 
               <div class="div-wrapper-textbox">
                 <div class="search-frame-input">
-{#                  <img class="search-img" src="img/SearchIcon.svg" /> #}
-                  <img class="search-img" src="{% static 'myapp/img/SearchIcon.svg' %}" />
+                  <img class="search-img" src="{% static 'myapp/img/SearchIcon.svg' %}"  alt=""/>
                   <label for="search"></label>
                   <input class="search-text" id="search" placeholder="Search" type="text" />
                 </div>
@@ -85,149 +81,69 @@
 
         <div class="login-frame">
           <div class="shortcut-frame">
-{#            <img class="img" src="img/SearchIcon.svg" />#}
-            <img class="img" src="{% static 'myapp/img/SearchIcon.svg' %}" />
-{#            <img class="img" src="img/like.svg" />#}
-            <img class="img" src="{% static 'myapp/img/like.svg' %}" />
+            <img class="img" src="{% static 'myapp/img/SearchIcon.svg' %}"  alt=""/>
+            <img class="img" src="{% static 'myapp/img/like.svg' %}"  alt=""/>
             <button id="shop-btn-h" class="shop-btn-h">
-{#                <img class="img" src="img/Shop.svg" />#}
-                <img class="img" src="{% static 'myapp/img/Shop.svg' %}" />
+                <img class="img" src="{% static 'myapp/img/Shop.svg' %}"  alt=""/>
             </button>
             <div class="cart-item">
               <div class="overlap-group-2" id="cart_number_value">
                 2
-                <!-- <div class="text-wrapper-3">2</div> -->
               </div>
             </div>
           </div>
           <button id="loginBtn" class="button-wrapper">
-            <!-- <span class="text-wrapper">Login</span> -->
             Login
-            <!-- <button class="text-wrapper">Login</button> -->
           </button>
         </div>
     </div>
 
-      <!------------------- Modal content ------------------->
-{#    <div id="loginModal" class="modal modal-content">#}
-{#      <div class="modal-header">#}
-{#        <span class="close">#}
-{#          <img class="close-img" src="./img/remove.svg" alt="close">#}
-{#        </span>#}
-{#        <div class="Welcome">Welcome 👋</div>#}
-{#        <div class="text">Please login here</div>#}
-{#        </div>#}
-{#          <div class="modal-body">#}
-{#            <form action="" class="form">#}
-{#              <label class="label" for="EmailAddress">Email Address</label>#}
-{#              <input#}
-{#                type="email"#}
-{#                placeholder="something@example.com"#}
-{#                class="textbox"#}
-{#                id="EmailAddress"#}
-{#                required#}
-{#              />#}
-{##}
-{#              <label class="label" for="Password">Password</label>#}
-{#              <input#}
-{#                type="password"#}
-{#                class="textbox"#}
-{#                id="Password"#}
-{#                #}
-{#              />#}
-{##}
-{##}
-{#              <div class="forgot-frame">#}
-{#                <input class="checkbox" type="checkbox" name="Remember" id="remember" value="Remember Me" />#}
-{#                <label class="remember-text" for="remember">Remember Me</label>#}
-{##}
-{#                <a href="#" class="forgot-pass" >#}
-{#                  <p class="forgot-pass-text">Forgot Password?</p>#}
-{#                </a>#}
-{#              </div>#}
-{##}
-{#              <div class="button-frame">#}
-{#                <button class="buttonlog login-text" type="submit">#}
-{#                  Login#}
-{#                </button>#}
-{##}
-{#                <div>#}
-{#                  <button class="buttonreg regester-text">Regester</button>#}
-{#                </div>#}
-{#              </div>#}
-{#            </form>#}
-{#          </div>#}
-{#    </div>#}
-{#    <div class="ortext">Or Login With</div>#}
-{##}
-{#    <div class="modal-footer">#}
-{#      <div class="login-with">#}
-{#      <button class="gbutton login-textg">#}
-{#        <img class="g-img" src="img/google.svg" />#}
-{#        Login with Google      #}
-{#      </button>#}
-{#      <button class="applebtn login-texta">#}
-{#        <img class="a-img" src="img/apple.svg" />#}
-{#        Login with Apple#}
-{#      </button>#}
-{#      </div>#}
-{#    </div>#}
-{#    </div>#}
+
     <!-- -------------------detail page-------------------- -->
     <div class="detail-page-frame">
         <div class="product-detail-frame">
             <div class="product-detail-addres">
                 <p class="product-detail-addres-text">Home</p>
-{#                <img class="product-detail-addres-icon" src="./img/direction-right.svg" alt="then">#}
                 <img class="product-detail-addres-icon" src="{% static 'myapp/img/direction-right.svg' %}" alt="then">
                 <p class="product-detail-addres-text">Shop</p>
-{#                <img class="product-detail-addres-icon" src="./img/direction-right.svg" alt="then">#}
                 <img class="product-detail-addres-icon" src="{% static 'myapp/img/direction-right.svg' %}" alt="then">
-                <p class="product-detail-addres-text">Apple iPhone 14 Pro</p>
+                <p class="product-detail-addres-text">{{ product.name }}</p>
             </div>
 
             <div class="product-detail">
                 <div class="product-detail-mainimg-frame">
-                    <img class="product-detail-mainimg" src="{% static 'myapp/img/image16.svg' %}" alt="Product Image">
-{#                    <img class="product-detail-mainimg" src="./img/image 16.svg" alt="Product Image">#}
+                    <img class="product-detail-mainimg" src="{{ product.image.url }}" alt="Product Image">
                 </div>
 
                 <div class="product-detail-otherimg-main-frame">
                     <div class="product-detail-otherimg-frame">
-{#                        <img class="product-detail-otherimg" src="./img/image 16.svg" alt="Product Image">#}
-                        <img class="product-detail-otherimg" src="{% static 'myapp/img/image16.svg' %}" alt="Product Image">
+                        <img class="product-detail-otherimg" src="{{ product.image.url }}" alt="Product Image">
                     </div>
 
                     <div class="product-detail-otherimg-frame">
-                        <img class="product-detail-otherimg" src="{% static 'myapp/img/image16.svg' %}" alt="Product Image">
-{#                        <img class="product-detail-otherimg" src="./img/image 16.svg" alt="Product Image">#}
+                        <img class="product-detail-otherimg" src="{{ product.image.url }}" alt="Product Image">
                     </div>
 
                     <div class="product-detail-otherimg-frame">
-{#                        <img class="product-detail-otherimg" src="./img/image 16.svg" alt="Product Image">#}
-                        <img class="product-detail-otherimg" src="{% static 'myapp/img/image16.svg' %}" alt="Product Image">
+                        <img class="product-detail-otherimg" src="{{ product.image.url }}" alt="Product Image">
                     </div>
 
                     <div class="product-detail-otherimg-frame">
-{#                        <img class="product-detail-otherimg" src="./img/image 16.svg" alt="Product Image">#}
-                        <img class="product-detail-otherimg" src="{% static 'myapp/img/image16.svg' %}" alt="Product Image">
+                        <img class="product-detail-otherimg" src="{{ product.image.url }}" alt="Product Image">
                     </div>
 
                 </div>
 
                 <div class="product-detail-maintext-frame">
-                    <div class="product-detail-text-header">Apple iPhone 14 Pro</div>
+                    <div class="product-detail-text-header">{{ product.name }}</div>
                     <div class="product-detail-text-stars">
-{#                        <img class="product-detail-text-stars"  src="./img/stars.svg" alt="Rate">#}
                         <img class="product-detail-text-stars"  src="{% static 'myapp/img/stars.svg' %}" alt="Rate">
                     </div>
 
-                    <div class="product-detail-text-rate">5.0 (121 Reviews)</div>
-                    <div id="product-detail-text-price" class="product-detail-text-price">$1999.00</div>
+                    <div class="product-detail-text-rate">{{ product.rating }} (121 Reviews)</div>
+                    <div id="product-detail-text-price" class="product-detail-text-price">${{ product.price }}</div>
                     <div class="product-detail-text-disc">
-                        It is a long established fact that a reader will be distracted by the <br>
-                        readable content of a page when looking at its layout. The point of <br>
-                        using Lorem Ipsum is that it has a more-or-less normal distribution.
+                        {{ product.description }}
                     </div>
 
                     <div class="product-detail-text-color">
@@ -250,7 +166,6 @@
 
                         <button class="product-detail-text-addcart-button" onclick="increase_cart()" >Add to Cart</button>
                         <img class="product-detail-text-addcart-like" src="{% static 'myapp/img/likeButton.svg' %}" alt="Like">
-{#                        <img class="product-detail-text-addcart-like" src="./img/likeButton.svg" alt="Like">#}
                     </div>
 
                     <div class="product-detail-text-share">
@@ -259,10 +174,6 @@
                             <img class="product-detail-share-iconimg" src="{% static 'myapp/img/facebookb.svg' %}" alt="facebook">
                             <img class="product-detail-share-iconimg" src="{% static 'myapp/img/twitterb.svg' %}" alt="twitter">
                             <img class="product-detail-share-iconimg" src="{% static 'myapp/img/instagramb.svg' %}" alt="instagram">
-{#                            <img class="product-detail-share-iconimg" src="./img/facebookb.svg" alt="facebook">#}
-{#                            <img class="product-detail-share-iconimg" src="./img/twitterb.svg" alt="twitter">#}
-{#                            <img class="product-detail-share-iconimg" src="./img/instagramb.svg" alt="instagram">#}
-
                         </div>
                     </div>
 
@@ -279,98 +190,87 @@
                 <div>
                   <!-- 1 -->
                   <div id="product-descriptions-text" class="detail-frame-active product-descriptions-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos 
-                        temporibus voluptatibus necessitatibus enim inventore reiciendis sequi
-                         iste dicta tenetur modi magnam saepe alias, quae quia nulla maiores.
-                          Fugit debitis ducimus, exercitationem unde in sed aliquam laborum 
-                          accusantium. Distinctio adipisci ratione voluptatem, maxime cupiditate
-                           aliquam impedit fugiat debitis facere soluta?
-                    </p>
-
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, unde.
+                        {{ product.additionalInform.description }}
                     </p>
-
                   </div>
                   <!-- 2 -->
                   <div id="additional-information-table" class="detail-frame-active additional-information-table">
                     <table>
                       <tr>
                         <th class="additional-information-table-h">Brand</th>
-                        <td class="additional-information-table-d">Apple</td>
+                        <td class="additional-information-table-d">{{ product.additionalInform.brand }}</td>
                       </tr>
                       <tr>
                         <th class="additional-information-table-h">Item Height</th>
-                        <td class="additional-information-table-d">65 CM</td>
+                        <td class="additional-information-table-d">{{ product.additionalInform.height }}CM</td>
                       </tr>
                       <tr>
                         <th class="additional-information-table-h">Item Width</th>
-                        <td class="additional-information-table-d">31.4 CM</td>
+                        <td class="additional-information-table-d">{{ product.additionalInform.width }}CM</td>
                       </tr>
                       <tr>
                         <th class="additional-information-table-h">Screen Size</th>
-                        <td class="additional-information-table-d">6.5 Inch</td>
+                        <td class="additional-information-table-d">{{ product.additionalInform.screen_size }}Inch</td>
                       </tr>
                       <tr>
                         <th class="additional-information-table-h">Model Number</th>
-                        <td class="additional-information-table-d">MF841HN/A</td>
+                        <td class="additional-information-table-d">{{ product.additionalInform.model }}</td>
                       </tr>
                       <tr>
                         <th class="additional-information-table-h">RAM Size</th>
-                        <td class="additional-information-table-d">6 GB</td>
+                        <td class="additional-information-table-d">{{ product.additionalInform.ram }}GB</td>
                       </tr>
                       <tr>
                         <th class="additional-information-table-h">Operating System</th>
-                        <td class="additional-information-table-d">ios 17</td>
+                        <td class="additional-information-table-d">{{ product.additionalInform.operating_system }}</td>
                       </tr>
                     </table>
                   </div>
                   <!-- 3 -->
                   <div id="product-descriptions-reviews" class="detail-frame-active product-descriptions-reviews">
                     <div class="product-descriptions-reviews-header">Customer Reviews</div>
-                    <div class="product-descriptions-reviews-comment">
-                      <div class="product-descriptions-reviews-per">
-                        <div class="product-descriptions-reviews-comment-img">
-                          <img src="{% static 'myapp/img/markWill.svg' %}" alt="Image">
-{#                          <img src="./img/mark Will.svg" alt="Image">#}
-                        </div>
-  
-                        <div class="product-descriptions-reviews-comment-name-frame">
-                          <div class="product-descriptions-reviews-comment-name">
-                            Mark Williams
-                          </div>
-                          <div class="product-descriptions-reviews-comment-star">
-                            <img src="{% static 'myapp/img/stars.svg' %}" alt="Rate">
-{#                            <img src="./img/stars.svg" alt="Rate">#}
-                          </div>
-                        </div>
-                      </div>
-                      <div class="product-descriptions-reviews-main-comment">
-                        <div class="product-descriptions-reviews-main-comment-h">
-                          Excellent Product, I Love It 😍
-                        </div>
-                        <div class="product-descriptions-reviews-main-comment-p">
-                          It is a long established fact that a reader will be distracted 
-                          by the readable content of a page when looking at its layout. 
-                          The point of using Lorem Ipsum is that it has a more-or-less 
-                          normal distribution of letters, as opposed to using 'Content 
-                          here, content here', making it look like readable English.
-                        </div>
-                        <div class="product-descriptions-reviews-main-comment-r">
-                          <div class="product-descriptions-reviews-main-comment-r-c1">Review by </div>
-                          <div class="product-descriptions-reviews-main-comment-r-c2">Electro </div>
-                          <div class="product-descriptions-reviews-main-comment-r-c1">Posted on </div>
-                          <div class="product-descriptions-reviews-main-comment-r-c2">Sep 08, 2023</div>
-                        </div>
-                      </div>
-                    </div>
-  
+                        {% for review in reviews %}
+                            <div class="product-descriptions-reviews-comment">
+                              <div class="product-descriptions-reviews-per">
+                                <div class="product-descriptions-reviews-comment-img">
+                                    {% if review.image %}
+                                        <img src="{{ review.image.url }}" alt="Review Image">
+                                    {% endif %}
+                                </div>
+
+                                <div class="product-descriptions-reviews-comment-name-frame">
+                                  <div class="product-descriptions-reviews-comment-name">
+                                    {{ review.name }}
+                                  </div>
+                                  <div class="product-descriptions-reviews-comment-star">
+                                    <img src="{% static 'myapp/img/stars.svg' %}" alt="Rate">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="product-descriptions-reviews-main-comment">
+                                <div class="product-descriptions-reviews-main-comment-h">
+{#                                  Excellent Product, I Love It 😍#}
+                                </div>
+                                <div class="product-descriptions-reviews-main-comment-p">
+                                      {{ review.comment }}
+                                </div>
+                                <div class="product-descriptions-reviews-main-comment-r">
+                                  <div class="product-descriptions-reviews-main-comment-r-c1">Review by </div>
+                                  <div class="product-descriptions-reviews-main-comment-r-c2">Electro </div>
+                                  <div class="product-descriptions-reviews-main-comment-r-c1">Posted on </div>
+                                  <div class="product-descriptions-reviews-main-comment-r-c2">{{ review.created_at }}</div>
+                                </div>
+                              </div>
+                            </div>
+                        {% endfor %}
+
+
   
                     <div class="product-descriptions-reviews-comment">
                       <div class="product-descriptions-reviews-per">
                         <div class="product-descriptions-reviews-comment-img">
                           <img src="{% static 'myapp/img/alexa.svg' %}" alt="Image">
-{#                          <img src="./img/alexa.svg" alt="Image">#}
                         </div>
   
                         <div class="product-descriptions-reviews-comment-name-frame">
@@ -379,7 +279,6 @@
                           </div>
                           <div class="product-descriptions-reviews-comment-star">
                             <img src="{% static 'myapp/img/stars.svg' %}" alt="Rate">
-{#                            <img src="./img/stars.svg" alt="Rate">#}
                           </div>
                         </div>
                       </div>
@@ -414,11 +313,6 @@
                             <img onclick="print_on_console(3)" src="{% static 'myapp/img/star-3.svg' %}" alt="Three">
                             <img onclick="print_on_console(4)" src="{% static 'myapp/img/star-4.svg' %}" alt="Four">
                             <img onclick="print_on_console(5)" src="{% static 'myapp/img/star-5.svg' %}" alt="Five">
-{#                            <img onclick="print_on_console(1)" src="./img/star-1.svg" alt="One">#}
-{#                            <img onclick="print_on_console(2)" src="./img/star-2.svg" alt="Two">#}
-{#                            <img onclick="print_on_console(3)" src="./img/star-3.svg" alt="Three">#}
-{#                            <img onclick="print_on_console(4)" src="./img/star-4.svg" alt="Four">#}
-{#                            <img onclick="print_on_console(5)" src="./img/star-5.svg" alt="Five">#}
                           </div>
                           
                           <div class="roduct-descriptions-reviews-addyors-info">
@@ -463,79 +357,33 @@
                 </div>
             </div>
         </div>
+
         <div class="relatedproducts">
+            {% if related_products %}
             <div class="relatedproducts-header">Related Products</div>
-
             <div class="relatedproducts-products">
+              {% for related_product in related_products %}
                 <div class="relatedproducts-products-p1">
+                  <a class="adwiser-text-button-link" href="{% url 'detail_page' related_product.id %}">
                     <div class="relatedproducts-products-p1-img">
-                        <img src="{% static 'myapp/img/image22.svg' %}" alt="Picture">
-{#                        <img src="img/image 22.svg" alt="Picture">#}
+                        <img src="{{ related_product.image.url }}" alt="Picture">
                     </div>
                     <div class="relatedproducts-products-p1-dis">
                         <div class="relatedproducts-products-p1-dis-h">
-                            Apple iPhone 14 Plus
+                            {{ related_product.name }}
                         </div>
                         <img class="relatedproducts-products-p1-dis-s" src="{% static 'myapp/img/stars.svg' %}" alt="Rate">
-{#                        <img class="relatedproducts-products-p1-dis-s" src="./img/stars.svg" alt="Rate">#}
                         <div class="relatedproducts-products-p1-dis-p">
-                            $850.00
+                            {{ related_product.price }}
                         </div>
                     </div>
+                   </a>
                 </div>
-
-                <div class="relatedproducts-products-p1">
-                    <div class="relatedproducts-products-p1-img">
-                        <img src="{% static 'myapp/img/image26.svg' %}" alt="Picture">
-{#                        <img src="img/image 26.svg" alt="Picture">#}
-                    </div>
-                    <div class="relatedproducts-products-p1-dis">
-                        <div class="relatedproducts-products-p1-dis-h">
-                            Xiaomi Fimi X8 Mini                        </div>
-                        <img class="relatedproducts-products-p1-dis-s" src="{% static 'myapp/img/stars.svg' %}" alt="Rate">
-{#                        <img class="relatedproducts-products-p1-dis-s" src="./img/stars.svg" alt="Rate">#}
-                        <div class="relatedproducts-products-p1-dis-p">
-                            $650.00
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relatedproducts-products-p1">
-                    <div class="relatedproducts-products-p1-img">
-                        <img src="{% static 'myapp/img/image19.svg' %}" alt="Picture">
-{#                        <img src="img/image 19.svg" alt="Picture">#}
-                    </div>
-                    <div class="relatedproducts-products-p1-dis">
-                        <div class="relatedproducts-products-p1-dis-h">
-                            Apple iPad Mini 6 Wi-Fi
-                        </div>
-                        <img class="relatedproducts-products-p1-dis-s" src="{% static 'myapp/img/stars.svg' %}" alt="Rate">
-{#                        <img class="relatedproducts-products-p1-dis-s" src="./img/stars.svg" alt="Rate">#}
-                        <div class="relatedproducts-products-p1-dis-p">
-                            $500.00
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relatedproducts-products-p1">
-                    <div class="relatedproducts-products-p1-img">
-                        <img src="{% static 'myapp/img/image25.png' %}" alt="Picture">
-{#                        <img src="img/image 25.png" alt="Picture">#}
-                    </div>
-                    <div class="relatedproducts-products-p1-dis">
-                        <div class="relatedproducts-products-p1-dis-h">
-                            Asus ROG Delta S
-                        </div>
-                        <img class="relatedproducts-products-p1-dis-s" src="{% static 'myapp/img/stars.svg' %}" alt="Rate">
-{#                        <img class="relatedproducts-products-p1-dis-s" src="./img/stars.svg" alt="Rate">#}
-                        <div class="relatedproducts-products-p1-dis-p">
-                            $250.00
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
+              {% endfor %}
+            {% else %}
+                <p class="relatedproducts-header">No related products found.</p>
+            {% endif %}
+        </div>
         </div>
         
     </div>
@@ -555,7 +403,6 @@
             <div class="cards-frame">
               <div class="cards-img-frame">
                 <img class="cards-img" src="{% static 'myapp/img/image16.svg' %}" alt="product image">
-{#                <img class="cards-img" src="./img/image 16.svg" alt="product image">#}
               </div>
               <div>
                 <div class="cards-name">
@@ -569,7 +416,6 @@
                   QTY: 1
                   <button class="card-close">
                     <img src="{% static 'myapp/img/trash.svg' %}" alt="delete" class="delete-cart" onclick="deleteCart(0)">
-{#                    <img src="./img/trash.svg" alt="delete" class="delete-cart" onclick="deleteCart(0)">#}
                   </button>
                 </div>
               </div>
@@ -578,7 +424,6 @@
             <div class="cards-frame">
               <div class="cards-img-frame">
                 <img class="cards-img" src="{% static 'myapp/img/image16.svg' %}" alt="product image">
-{#                <img class="cards-img" src="./img/image 16.svg" alt="product image">#}
               </div>
               <div>
                 <div class="cards-name">
@@ -592,7 +437,6 @@
                   QTY: 1
                   <button class="card-close">
                     <img src="{% static 'myapp/img/trash.svg' %}" alt="delete" class="delete-cart" onclick="deleteCart(1)">
-{#                    <img src="./img/trash.svg" alt="delete" class="delete-cart" onclick="deleteCart(1)">#}
                   </button>
                 </div>
               </div>
@@ -601,7 +445,6 @@
             <div class="cards-frame">
               <div class="cards-img-frame">
                 <img class="cards-img" src="{% static 'myapp/img/image25.png' %}" alt="product image">
-{#                <img class="cards-img" src="./img/image 25.png" alt="product image">#}
               </div>
               <div>
                 <div class="cards-name">
@@ -615,7 +458,6 @@
                   QTY: 1
                   <button class="card-close">
                     <img src="{% static 'myapp/img/trash.svg' %}" alt="delete" class="delete-cart" onclick="deleteCart(2)">
-{#                    <img src="./img/trash.svg" alt="delete" class="delete-cart" onclick="deleteCart(2)">#}
                   </button>
                 </div>
               </div>
@@ -643,14 +485,12 @@
       <div class="new-footer-frame"></div>
       <div class="electro-style">
           <img src="{% static 'myapp/img/electro.svg' %}" alt="logo">
-{#          <img src="./img/electro.svg" alt="logo">#}
       </div>
 
       <div class="phone" >
         <div class="phone-img" >
           <div class="phone-img2"></div>
           <img src="{% static 'myapp/img/calling.svg' %}" alt="calling">
-{#          <img src="./img/calling.svg" alt="calling">#}
         </div>
         <div class="phone-text">
           <a class="phone-text" href="callto:(316) 555-0116">(316) 555-0116</a>
@@ -661,7 +501,6 @@
         <div class="mailto-img">
           <div class="mailto-img2"></div>
           <img src="{% static 'myapp/img/gmail.svg' %}" alt="mailto">
-{#          <img src="./img/gmail.svg" alt="mailto">#}
       </div>
         <div class="mail-text">
           <a class="mail-text" href="mailto:electro@example.com">electro@example.com</a>
@@ -671,10 +510,8 @@
 
       <div class="location">
           <div class="location-img" >
-            <!-- <div style="width: 6px; height: 6px; left: 9px; top: 8px; position: absolute; border-radius: 9999px; border: 1.50px white solid"></div> -->
             <div class="location-img2" ></div>
               <img src="{% static 'myapp/img/location.svg' %}" alt="location">
-{#              <img src="./img/location.svg" alt="location">#}
           </div>
           <div class="location-text">
               4140 Parker Rd. Allentown, <br/>New Mexico 31134
@@ -737,7 +574,6 @@
             <div class="email-box">
               <div class="email-img">
                   <img src="{% static 'myapp/img/gmail.svg' %}" alt="Email">
-{#                  <img src="./img/gmail.svg" alt="Email">#}
               </div>
 
               <div class="email-form">
@@ -754,12 +590,8 @@
               <div >
                 <button class="submit-butten" type="submit">
                 <img src="{% static 'myapp/img/arrow-right.svg' %}" alt="submit">
-{#                <img src="./img/arrow-right.svg" alt="submit">#}
                 </button>
               </div>
-                  
-                  <!-- <a href="#" class="button-2" >Login</a> -->
-              <!-- <div style="width: 8px; height: 12px; left: 8px; top: 6px; position: absolute; border-radius: 2px; border: 1.50px white solid"></div> -->
             </div>
           </div>
         </div>
@@ -771,31 +603,26 @@
           <div class="visa-frame">
               <div >
                   <a href="#"><img src="{% static 'myapp/img/Visa.svg' %}" alt="Visa"> </a>
-{#                  <a href="#"><img src="./img/Visa.svg" alt="Visa"> </a>#}
               </div>
             </div>
           <div class="mastercard-frame">
               <div >
                   <a href="#"><img src="{% static 'myapp/img/Mastercard.svg' %}" alt="Mastercard"> </a>
-{#                  <a href="#"><img src="./img/Mastercard.svg" alt="Mastercard"> </a>#}
               </div>
           </div>
           <div class="gplay-frame">
               <div >
                   <a href="#"><img src="{% static 'myapp/img/GooglePay.svg' %}" alt="GooglePay"> </a>
-{#                  <a href="#"><img src="./img/GooglePay.svg" alt="GooglePay"> </a>#}
               </div>
           </div>
           <div class="amex-frame">
               <div >
                   <a href="#"><img src="{% static 'myapp/img/Amex.svg' %}" alt="Amex"> </a>
-{#                  <a href="#"><img src="./img/Amex.svg" alt="Amex"> </a>#}
               </div>
           </div>
           <div class="paypal-frame">
               <div >
                   <a href="#"><img src="{% static 'myapp/img/PayPal.svg' %}" alt="PayPal"> </a>
-{#                  <a href="#"><img src="./img/PayPal.svg" alt="PayPal"> </a>#}
               </div>
           </div>
       </div>
@@ -803,15 +630,12 @@
       <div class="media" >
         <div class="media-pic-frame">
           <a href="#" ><img src="{% static 'myapp/img/facebook.svg' %}" alt="facebook"></a>
-{#          <a href="#" ><img src="./img/facebook.svg" alt="facebook"></a>#}
         </div>
         <div class="media-pic-frame">
           <a href="#" ><img src="{% static 'myapp/img/instagram.svg' %}" alt="facebook"></a>
-{#          <a href="#" ><img src="./img/instagram.svg" alt="facebook"></a>#}
         </div>
         <div class="media-pic-frame">
           <a href="#" ><img src="{% static 'myapp/img/twitter.svg' %}" alt="facebook"></a>
-{#          <a href="#" ><img src="./img/twitter.svg" alt="facebook"></a>#}
         </div>
       </div>
       
@@ -826,7 +650,6 @@
             <div class="modal-header">
               <span class="close">
                 <img class="close-img" src="{% static 'myapp/img/remove.svg' %}" alt="close">
-{#                <img class="close-img" src="./img/remove.svg" alt="close">#}
               </span>
               <div class="Welcome">Welcome 👋</div>
               <div class="text">Please login here</div>
@@ -876,12 +699,10 @@
             <div class="login-with">
             <button class="gbutton login-textg">
               <img class="g-img" src="{% static 'myapp/img/google.svg' %}" />
-{#              <img class="g-img" src="img/google.svg" />#}
               Login with Google
             </button>
             <button class="applebtn login-texta">
               <img class="a-img" src="{% static 'myapp/img/apple.svg' %}" />
-{#              <img class="a-img" src="img/apple.svg" />#}
               Login with Apple
             </button>
             </div>
@@ -894,7 +715,6 @@
           <div class="modal-header">
               <span class="close">
                   <img class="close-img" src="{% static 'myapp/img/remove.svg' %}" alt="close">
-{#                  <img class="close-img" src="./img/remove.svg" alt="close">#}
               </span>
               <div class="Welcome">Create New Account</div>
               <div class="text">Please enter details</div>
@@ -941,12 +761,10 @@
               <div class="login-with">
                   <button class="gbutton login-textg">
                       <img class="g-img" src="{% static 'myapp/img/google.svg' %}" />
-{#                      <img class="g-img" src="img/google.svg" />#}
                       Login with Google
                   </button>
                   <button class="applebtn login-texta">
                       <img class="a-img" src="{% static 'myapp/img/apple.svg' %}" />
-{#                      <img class="a-img" src="img/apple.svg" />#}
                       Login with Apple
                   </button>
               </div>
@@ -958,7 +776,6 @@
         <div >
             <span class="close">
                 <img class="close-img-otp" src="{% static 'myapp/img/remove.svg' %}" alt="close">
-{#                <img class="close-img-otp" src="./img/remove.svg" alt="close">#}
             </span>
             <div class="otp-header">Enter OTP</div>
             <div class="otp-text-under">We have share a code of your registered email
@@ -989,7 +806,6 @@
                           <!-- password -->
     <div id="passChangeModal" class="modal-pass-change modal-content-pass-change">
         <img class="password-change-icon" src="{% static 'myapp/img/LockIconSuccessfully.svg' %}" alt="password change">
-{#        <img class="password-change-icon" src="./img/Lock Icon Successfully.svg" alt="password change">#}
 
         <div class="password-change-text">
             <p class="password-change-text-h">Password Changed Successfully</p>
@@ -1001,7 +817,6 @@
 
 </div>
 
-{#<script src="./script.js"></script>#}
 <script src="{% static 'myapp/Script/script_product.js' %}"></script>
 </body>
 </html>
