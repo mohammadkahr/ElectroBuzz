@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-{#    <link rel="stylesheet" href="./style.css" />#}
     <link rel="stylesheet" href="{% static 'myapp/CSS/style_home.css' %}">
-{#    <link rel="stylesheet" href="style_home.css">#}
     <title>Home</title>
 </head>
 <body>
@@ -19,12 +17,10 @@
           <div class="overlap-group">
             <div class="logo-frame">
               <img class="logo-text" src="{% static 'myapp/img/Logo+Text.svg' %}" />
-{#              <img class="logo-text" src="./img/Logo+Text.svg" />#}
               <div class="logo-input">
                 <div class="logo-input-frame">
                   <div class="logo-img">
                     <img src="{% static 'myapp/img/Icon-select.svg' %}" alt="select" class="menu-line-horizontal ">
-{#                    <img src="./img/Icon-select.svg" alt="select" class="menu-line-horizontal ">#}
                 </div>
                   <div class="logo-selectbox-frame">
                     <label class="logo-selectbox" for="categories"></label>
@@ -43,7 +39,6 @@
 
             <div class="search-frame">
               <div class="div-color">
-                  <!-- <label class="category-frame" for="Search"></label> -->
                   <select class=" search-frame-wrapper" name="Search" id="Search">
                     <option value="All ">All </option>
                     <option value="Category 1">Category 1</option>
@@ -54,8 +49,7 @@
 
               <div class="div-wrapper-textbox">
                 <div class="search-frame-input">
-                  <img class="search-img" src="{% static 'myapp/img/SearchIcon.svg' %}" />
-{#                  <img class="search-img" src="img/SearchIcon.svg" /> #}
+                  <img class="search-img" src="{% static 'myapp/img/SearchIcon.svg' %}"  alt=""/>
                   <label for="search"></label>
                   <input class="search-text" id="search" placeholder="Search" type="text" />
                 </div>
@@ -92,20 +86,15 @@
             <img class="img" src="{% static 'myapp/img/SearchIcon.svg' %}" />
             <img class="img" src="{% static 'myapp/img/like.svg' %}" />
             <img class="img" src="{% static 'myapp/img/Shop.svg' %}" />
-{#            <img class="img" src="img/SearchIcon.svg" />#}
-{#            <img class="img" src="img/like.svg" />#}
-{#            <img class="img" src="img/Shop.svg" />#}
+
             <div class="cart-item">
               <div class="overlap-group-2">
                 2
-                <!-- <div class="text-wrapper-3">2</div> -->
               </div>
             </div>
           </div>
           <button id="loginBtn" class="button-wrapper">
-            <!-- <span class="text-wrapper">Login</span> -->
             Login
-            <!-- <button class="text-wrapper">Login</button> -->
           </button>
         </div>
     </div>
@@ -114,23 +103,18 @@
     <!-- -------------------main page-------------------- -->
     <div class="main-page-frame" >
       <div class="main-page-text-frame">
-        <img class="man-with-head" src="{% static 'myapp/img/young-handsome.svg' %}" alt="man-with-head">
-{#        <img class="man-with-head" src="./img/young-handsome.svg" alt="man-with-head">#}
+        <img class="man-with-head" src="{{ active_banner.image.url }}" alt="banner image">
         <div class="image-befor-main-page"></div>
         <div class="text-frame-main-page">
           <div class="main-page-text-1">
-            <p>Great Sound <br> With Solo <br>Headphone</p>
+              <p>{{ active_banner.header  }}</p>
           </div>
           <div class="main-page-text-2">
-            <p>It is a long established fact that a reader will be <br>
-            distracted by the readable content of a page when <br>
-            looking at its layout. The point of using Lorem Ipsum.
-            </p>
+            <p>{{ active_banner.caption }}</p>
           </div>
           <button class="main-page-text-frame-button">
-            Shop Now  
+            <a class="adwiser-text-button-link" href="{{ active_banner.link  }}">Shop Now</a>
             <img class="main-page-text-frame-button-img" src="{% static 'myapp/img/arrow-right.svg' %}" alt="">
-{#            <img class="main-page-text-frame-button-img" src="./img/arrow-right.svg" alt="">#}
           </button>
         </div>
 
@@ -144,68 +128,26 @@
 
           <div class="buttonshopframe">
             <button class="buttonshopframe1" >
-              <img src="{% static 'myapp/img/arrow-right.svg' %}" alt="before">
-{#              <img src="./img/arrow-right1.svg" alt="before">#}
+              <img src="{% static 'myapp/img/arrow-right1.svg' %}" alt="before">
             </button>
             <button class="buttonshopframe2">
                 <img src="{% static 'myapp/img/arrow-right2.svg' %}" alt="after">
-{#                <img src="./img/arrow-right2.svg" alt="after">#}
             </button>
           </div>
 
           <div class="shop-categoris">
-            <div class="mobile-phone-cat">
-              <div class="background-imgs">
-                <img class="mobile-phone-cat-img" src="{% static 'myapp/img/image9.svg' %}" alt="phone">
-{#                <img class="mobile-phone-cat-img" src="./img/image 9.svg" alt="phone">#}
-              </div>
-              <p class="mobile-phone-cat-text">Mobile Phones</p>
-            </div>
-
-            <div class="smarttv-cat">
-              <div class="background-imgs">
-                <img class="mobile-phone-cat-img" src="{% static 'myapp/img/image11.svg' %}" alt="smart tv">
-{#                <img class="mobile-phone-cat-img" src="./img/image 11.svg" alt="smart tv">#}
-              </div>
-              <p class="mobile-phone-cat-text">Smart TV</p>
-            </div>
-
-            <div class="smartwatch-cat">
-              <div class="background-imgs">
-                <img class="mobile-phone-cat-img" src="{% static 'myapp/img/image13.svg' %}" alt="smart watch">
-{#                <img class="mobile-phone-cat-img" src="./img/image 13.svg" alt="smart watch">#}
-              </div>
-              <p class="mobile-phone-cat-text">Smart Watch</p>
-            </div>
-
-            <div class="Laptops-cat">
-              <div class="background-imgs">
-                <img class="mobile-phone-cat-img" src="{% static 'myapp/img/image10.svg' %}" alt="Laptops">
-{#                <img class="mobile-phone-cat-img" src="./img/image 10.svg" alt="Laptops">#}
-              </div>
-              <p class="mobile-phone-cat-text">Laptops</p>
-            </div>
-
-            <div class="Drones-cat">
-              <div class="background-imgs">
-                <img class="mobile-phone-cat-img" src="{% static 'myapp/img/image14.svg' %}" alt="Drones">
-{#                <img class="mobile-phone-cat-img" src="./img/image 14.svg" alt="Drones">#}
-              </div>
-              <p class="mobile-phone-cat-text">Drones</p>
-            </div>
-
-            <div class="Headphones-cat">
-              <div class="background-imgs">
-                <img class="mobile-phone-cat-img" src="{% static 'myapp/img/image12.svg' %}" alt="Headphones">
-              </div>
-              <p class="mobile-phone-cat-text">Headphones</p>
-            </div>
-
+              {% for category in categories %}
+                <div class="mobile-phone-cat">
+                    <div class="background-imgs">
+                        <img class="mobile-phone-cat-img" src="{{ category.image.url }}" alt="{{ category.name }}">
+                    </div>
+                    <p class="mobile-phone-cat-text">{{ category.name }}</p>
+                </div>
+              {% endfor %}
           </div>
-
         </div>
-
       </div>
+
 
       <div class="ads-frame">
         <div class="ads-frame1">
@@ -214,10 +156,8 @@
           <p class="Dontmiss">Don't miss the last opportunity </p>
           <button class="shop-now-button">Shop Now
             <img class="arrow-right" src="{% static 'myapp/img/arrow-right.svg' %}" alt="">
-{#            <img class="arrow-right" src="./img/arrow-right.svg" alt="">#}
           </button>
           <img class="ads-img" src="{% static 'myapp/img/image15.svg' %}" alt="laptop">
-{#          <img class="ads-img" src="./img/image 15.svg" alt="laptop">#}
 
         </div>
 
@@ -225,17 +165,13 @@
           <button class="ads-frame-off-btn">50% OFF</button>
           <p class="ads-frame-header-text">Iphone 14 Pro</p>
           <p class="Dontmiss">Don't miss the last opportunity </p>
-          <a href="{% url 'detail_page' %}" target="_self">
+          <a href="{% url 'detail_page' 3 %}" target="_self">
             <button class="shop-now-button" >Shop Now
               <img class="arrow-right" src="{% static 'myapp/img/arrow-right.svg' %}" alt="">
-{#              <img class="arrow-right" src="./img/arrow-right.svg" alt="">#}
             </button>
           </a>
           <img class="ads-img" src="{% static 'myapp/img/image16.svg' %}" alt="Iphone">
-{#          <img class="ads-img" src="./img/image 16.svg" alt="Iphone">#}
-
         </div>
-
 
       </div>
 
@@ -250,85 +186,39 @@
         </div>
         <div class="bestsellerpro-all">
           <div class="bestsellerpro1">
-            <p class="bestsellerpro1-header">Apple iPad Pro <br> Wi-Fi</p>
-            <p class="bestsellerpro1-pri">$1520</p>
-            <img class="bestsellerpro1-img" src="{% static 'myapp/img/ipadpro.svg' %}" alt="ipadpro">
-{#            <img class="bestsellerpro1-img" src="./img/ipadpro.svg" alt="ipadpro">#}
+            <a href="product/{{ first_products.id }}">
+            <p class="bestsellerpro1-header">{{ first_products.name }}</p>
+            <p class="bestsellerpro1-pri">${{ first_products.price }}</p>
+            <img class="bestsellerpro1-img" src="{{ first_products.image.url }}" alt="first_products.image">
+            </a>
           </div>
-          <div class="bestsellerpro-2to4">
-            <div class="bestsellerpro2">
-              <img class="bestsellerpro-imges" src="{% static 'myapp/img/image19.svg' %}" alt="Apple iPad Mini 6 Wi-Fi">
-{#              <img class="bestsellerpro-imges" src="./img/image 19.svg" alt="Apple iPad Mini 6 Wi-Fi">#}
-              <p class="bestsellerpro-name">Apple iPad Mini 6 Wi-Fi</p>
-              <img class="bestsellerpro-stars" src="{% static 'myapp/img/stars.svg' %}" alt="stars">
-{#              <img class="bestsellerpro-stars" src="./img/stars.svg" alt="stars">#}
-              <p class="bestsellerpro-price">$500.00</p>
+            <div class="bestsellerpro-2to7">
+              {% for product in products %}
+                <div class="bestsellerpro2">
+                    <a class="adwiser-text-button-link" href="product/{{ product.id }}">
+                      <img class="bestsellerpro-imges" src="{{ product.image.url }}" alt="img">
+                      <p class="bestsellerpro-name">{{ product.name }}</p>
+                      <img class="bestsellerpro-stars" src="{% static 'myapp/img/stars.svg' %}" alt="stars">
+                      <p class="bestsellerpro-price">{{ product.price }}</p>
+                    </a>
+                </div>
+              {% endfor %}
             </div>
-            <div class="bestsellerpro3">
-              <img class="bestsellerpro-imges" src="{% static 'myapp/img/image20.svg' %}" alt="Microsoft Surface Go">
-{#              <img class="bestsellerpro-imges" src="./img/image 20.svg" alt="Microsoft Surface Go">#}
-              <p class="bestsellerpro-name">Microsoft Surface Go</p>
-              <img class="bestsellerpro-stars" src="{% static 'myapp/img/stars.svg' %}" alt="stars">
-{#              <img class="bestsellerpro-stars" src="./img/stars.svg" alt="stars">#}
-              <p class="bestsellerpro-price">$399.00</p>
-            </div>
-            <div class="bestsellerpro4">
-              <img class="bestsellerpro-imges" src="{% static 'myapp/img/image21.svg' %}" alt="LG 4K Ultra UHD TV">
-{#              <img class="bestsellerpro-imges" src="./img/image 21.svg" alt="LG 4K Ultra UHD TV">#}
-              <p class="bestsellerpro-name">LG 4K Ultra UHD TV</p>
-              <img class="bestsellerpro-stars" src="{% static 'myapp/img/stars.svg' %}g" alt="stars">
-{#              <img class="bestsellerpro-stars" src="./img/stars.svg" alt="stars">#}
-              <p class="bestsellerpro-price">$5500.00</p>
-            </div>
-          </div>
-          <div class="bestsellerpro-5to7">
-            <div class="bestsellerpro5">
-              <img class="bestsellerpro-imges" src="{% static 'myapp/img/image18.svg' %}" alt="Apple iPad Mini 6 Wi-Fi">
-{#              <img class="bestsellerpro-imges" src="./img/image 18.svg" alt="Apple iPad Mini 6 Wi-Fi">#}
-              <p class="bestsellerpro-name">Samsung Galaxy S22 Ultra</p>
-              <img class="bestsellerpro-stars" src="{% static 'myapp/img/stars.svg' %}" alt="stars">
-{#              <img class="bestsellerpro-stars" src="./img/stars.svg" alt="stars">#}
-              <p class="bestsellerpro-price">$1350.00</p>
-            </div>
-            <div class="bestsellerpro6">
-              <img class="bestsellerpro-imges" src="{% static 'myapp/img/image22.svg' %}" alt="Apple iPhone 14 Plus">
-{#              <img class="bestsellerpro-imges" src="./img/image 22.svg" alt="Apple iPhone 14 Plus">#}
-              <p class="bestsellerpro-name">Apple iPhone 14 Plus</p>
-              <img class="bestsellerpro-stars" src="{% static 'myapp/img/stars.svg' %}" alt="stars">
-{#              <img class="bestsellerpro-stars" src="./img/stars.svg" alt="stars">#}
-              <p class="bestsellerpro-price">$850.00</p>
-            </div>
-            <div class="bestsellerpro7">
-              <img class="bestsellerpro-imges" src="{% static 'myapp/img/image17.svg' %}" alt="Bose QuietComfort 45">
-{#              <img class="bestsellerpro-imges" src="./img/image 17.svg" alt="Bose QuietComfort 45">#}
-              <p class="bestsellerpro-name">Bose QuietComfort 45</p>
-              <img class="bestsellerpro-stars" src="{% static 'myapp/img/stars.svg' %}" alt="stars">
-{#              <img class="bestsellerpro-stars" src="./img/stars.svg" alt="stars">#}
-              <p class="bestsellerpro-price">$300.00</p>
-            </div>
-          </div>
-          
+
         </div>
 
       </div>
 
-      <div class="Advertisement container-fluid">
+      <div class="Advertisement" >
         <div class="adwiser-text-frame">
-          <div class="adwiser-text1">Apple iPhone 13 Pro Max</div>
-          <div class="adwiser-text2">Don't miss the last opportunity </div>
+          <div class="adwiser-text1">{{ active_adviser.header }}</div>
+          <div class="adwiser-text2">{{ active_adviser.caption }} </div>
           <button class="adwiser-text-button">
-            Shop Now
+            <a class="adwiser-text-button-link" href="{{ active_adviser.link  }}">Shop Now</a>
             <img class="arrow-right-img" src="{% static 'myapp/img/arrow-right.svg' %}" alt="arrow-right">
-{#            <img class="arrow-right-img" src="./img/arrow-right.svg" alt="arrow-right">#}
           </button>
         </div>
-        <img class="Advertisement-img container-fluid" src="{% static 'myapp/img/adwiser.svg' %}" alt="adwiser">
-{#        <img class="Advertisement-img container-fluid" src="./img/adwiser.svg" alt="adwiser">#}
-
-
-
-
-
+        <img class="Advertisement-img" src="{{ active_adviser.image.url }}" alt="adviser">
       </div>
 
       <div class="topsellingpro">
@@ -342,64 +232,27 @@
         </div>
         <div class="bestsellerpro-all">
           <div class="bestsellerpro1">
-            <p class="bestsellerpro1-header">Apple iPad Pro <br> Wi-Fi</p>
-            <p class="bestsellerpro1-pri">$1520</p>
-            <img class="bestsellerpro1-img" src="{% static 'myapp/img/image32.svg' %}" alt="ipadpro">
-{#            <img class="bestsellerpro1-img" src="./img/image 32.svg" alt="ipadpro">#}
+            <a href="product/{{ first_product_v.id }}">
+            <p class="bestsellerpro1-header">{{ first_product_v.name }}</p>
+            <p class="bestsellerpro1-pri">${{ first_product_v.price }}</p>
+            <img class="bestsellerpro1-img" src="{{ first_product_v.image.url }}" alt="first_products.image">
+            </a>
           </div>
-          <div class="bestsellerpro-2to4">
+
+        <div class="bestsellerpro-2to7">
+          {% for product in next_six_products_v %}
             <div class="bestsellerpro2">
-              <img class="bestsellerpro-imges" src="{% static 'myapp/img/image24.svg' %}" alt="Panasonic Lumix DC-GH5 II">
-{#              <img class="bestsellerpro-imges" src="./img/image 24.svg" alt="Panasonic Lumix DC-GH5 II">#}
-              <p class="bestsellerpro-name">Panasonic Lumix DC-GH5 II</p>
-              <img class="bestsellerpro-stars" src="{% static 'myapp/img/stars.svg' %}" alt="stars">
-{#              <img class="bestsellerpro-stars" src="./img/stars.svg" alt="stars">#}
-              <p class="bestsellerpro-price">$1500.00</p>
+                <a class="adwiser-text-button-link" href="product/{{ product.id }}">
+                  <img class="bestsellerpro-imges" src="{{ product.image.url }}" alt="img">
+                  <p class="bestsellerpro-name">{{ product.name }}</p>
+                  <img class="bestsellerpro-stars" src="{% static 'myapp/img/stars.svg' %}" alt="stars">
+                  <p class="bestsellerpro-price">{{ product.price }}</p>
+                </a>
             </div>
-            <div class="bestsellerpro3">
-              <img class="bestsellerpro-imges" src="{% static 'myapp/img/image25.svg' %}" alt="Asus ROG Delta S">
-{#              <img class="bestsellerpro-imges" src="./img/image 25.svg" alt="Asus ROG Delta S">#}
-              <p class="bestsellerpro-name">Asus ROG Delta S</p>
-              <img class="bestsellerpro-stars" src="{% static 'myapp/img/stars.svg' %}" alt="stars">
-{#              <img class="bestsellerpro-stars" src="./img/stars.svg" alt="stars">#}
-              <p class="bestsellerpro-price">$250.00</p>
-            </div>
-            <div class="bestsellerpro4">
-              <img class="bestsellerpro-imges" src="{% static 'myapp/img/image26.svg' %}" alt="Xiaomi Fimi X8 Mini">
-{#              <img class="bestsellerpro-imges" src="./img/image 26.svg" alt="Xiaomi Fimi X8 Mini">#}
-              <p class="bestsellerpro-name">Xiaomi Fimi X8 Mini</p>
-              <img class="bestsellerpro-stars" src="{% static 'myapp/img/stars.svg' %}" alt="stars">
-{#              <img class="bestsellerpro-stars" src="./img/stars.svg" alt="stars">#}
-              <p class="bestsellerpro-price">$650.00</p>
-            </div>
-          </div>
-          <div class="bestsellerpro-5to7">
-            <div class="bestsellerpro5">
-              <img class="bestsellerpro-imges" src="{% static 'myapp/img/image27.svg' %}" alt="Apple iPhone 13">
-{#              <img class="bestsellerpro-imges" src="./img/image 27.svg" alt="Apple iPhone 13">#}
-              <p class="bestsellerpro-name">Apple iPhone 13</p>
-              <img class="bestsellerpro-stars" src="{% static 'myapp/img/stars.svg' %}" alt="stars">
-{#              <img class="bestsellerpro-stars" src="./img/stars.svg" alt="stars">#}
-              <p class="bestsellerpro-price">$500.00</p>
-            </div>
-            <div class="bestsellerpro6">
-              <img class="bestsellerpro-imges" src="{% static 'myapp/img/image28.svg' %}" alt="Fossil Gen 6 Smart Watch">
-{#              <img class="bestsellerpro-imges" src="./img/image 28.svg" alt="Fossil Gen 6 Smart Watch">#}
-              <p class="bestsellerpro-name">Fossil Gen 6 Smart Watch</p>
-              <img class="bestsellerpro-stars" src="{% static 'myapp/img/stars.svg' %}" alt="stars">
-{#              <img class="bestsellerpro-stars" src="./img/stars.svg" alt="stars">#}
-              <p class="bestsellerpro-price">$450.00</p>
-            </div>
-            <div class="bestsellerpro7">
-              <img class="bestsellerpro-imges" src="{% static 'myapp/img/image29.svg' %}" alt="Apple iPad Air Wi-Fi">
-{#              <img class="bestsellerpro-imges" src="./img/image 29.svg" alt="Apple iPad Air Wi-Fi">#}
-              <p class="bestsellerpro-name">Apple iPad Air Wi-Fi</p>
-              <img class="bestsellerpro-stars" src="{% static 'myapp/img/stars.svg' %}" alt="stars">
-{#              <img class="bestsellerpro-stars" src="./img/stars.svg" alt="stars">#}
-              <p class="bestsellerpro-price">$850.00</p>
-            </div>
-          </div>
-          
+          {% endfor %}
+        </div>
+
+
         </div>
 
       </div>
@@ -408,28 +261,24 @@
       <div class="ourfeatures">
         <div class="free-shoping">
           <img class="ourfeatures-icons" src="{% static 'myapp/img/fastdelivery.svg' %}" alt="fast delivery">
-{#          <img class="ourfeatures-icons" src="./img/fast delivery.svg" alt="fast delivery">#}
           <p class="ourfeatures-text1">Free Shipping</p>
           <p class="ourfeatures-text2">Free shipping for order above $150</p>
         </div>
 
         <div class="money-guarantee">
           <img class="ourfeatures-icons" src="{% static 'myapp/img/money.svg' %}" alt="Money Guarantee">
-{#          <img class="ourfeatures-icons" src="./img/money.svg" alt="Money Guarantee">#}
           <p class="ourfeatures-text1">Money Guarantee</p>
           <p class="ourfeatures-text2">Within 30 days for an exchange</p>
         </div>
 
         <div class="online-suppurt">
           <img class="ourfeatures-icons" src="{% static 'myapp/img/packagebox9.svg' %}" alt="Online Support">
-{#          <img class="ourfeatures-icons" src="./img/package box 9.svg" alt="Online Support">#}
           <p class="ourfeatures-text1">Online Support</p>
           <p class="ourfeatures-text2">24 hours a day, 7 days a week</p>
         </div>
 
         <div class="flexible-payment">
           <img class="ourfeatures-icons" src="{% static 'myapp/img/packagebox10.svg' %}" alt="Flexible Payment">
-{#          <img class="ourfeatures-icons" src="./img/package box 10.svg" alt="Flexible Payment">#}
           <p class="ourfeatures-text1">Flexible Payment</p>
           <p class="ourfeatures-text2">Pay with multiple credit cards</p>
         </div>
@@ -446,62 +295,73 @@
             <div class="modal-header">
               <span class="close">
                 <img class="close-img" src="{% static 'myapp/img/remove.svg' %}" alt="close">
-{#                <img class="close-img" src="./img/remove.svg" alt="close">#}
               </span>
               <div class="Welcome">Welcome 👋</div>
               <div class="text">Please login here</div>
               </div>
+                <form method="POST"  class="form">
                 <div class="modal-body">
-                  <!-- <form action="" class="form"> -->
                     <label class="label" for="EmailAddress">Email Address</label>
                     <input
                       type="email"
                       placeholder="something@example.com"
                       class="textbox"
-                      id="EmailAddress" 
+                      id="EmailAddress"
+                      name="email"
+                      required
                     />
-      
+
                     <label class="label" for="Password">Password</label>
                     <input
                       type="password"
                       class="textbox"
                       id="Password"
-                      
+                      name="password"
+                      required
                     />
-      
-      
+
                     <div class="forgot-frame">
                       <input class="checkbox" type="checkbox" name="Remember" id="remember" value="Remember Me" />
                       <label class="remember-text" for="remember">Remember Me</label>
-      
+
                       <a href="#" class="forgot-pass" >
                         <p class="forgot-pass-text">Forgot Password?</p>
                       </a>
                     </div>
-      
+
                     <div class="button-frame">
                       <button class="buttonlog login-text" type="submit">
                         Login
                       </button>
-      
-                      <div>
-                        <button id="RegBtn" class="buttonreg regester-text">Regester</button>
-                    </div>
-                  <!-- </form> -->
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                </form >
+            </div>
+                  <div>
+                    <button id="RegBtn" class="buttonreg regester-text">Register</button>
                 </div>
-          </div>
+
+
+        </div>
+
+              {% if messages %}
+                {% for message in messages %}
+                    <div class="alert {% if message.tags %}alert-{{ message.tags }}{% else %}alert-info{% endif %}">
+                        {{ message }}
+                        <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+                    </div>
+                {% endfor %}
+              {% endif %}
+
           <div class="ortext">Or Login With</div>
-      
-          <div class="modal-footer">
+          <div class="modal-footer1">
             <div class="login-with">
             <button class="gbutton login-textg">
               <img class="g-img" src="{% static 'myapp/img/google.svg' %}" />
-{#              <img class="g-img" src="img/google.svg" />#}
               Login with Google
             </button>
             <button class="applebtn login-texta">
               <img class="a-img" src="{% static 'myapp/img/apple.svg' %}" />
-{#              <img class="a-img" src="img/apple.svg" />#}
               Login with Apple
             </button>
             </div>
@@ -514,19 +374,27 @@
           <div class="modal-header">
               <span class="close">
                   <img class="close-img" src="{% static 'myapp/img/remove.svg' %}" alt="close">
-{#                  <img class="close-img" src="./img/remove.svg" alt="close">#}
               </span>
               <div class="Welcome">Create New Account</div>
               <div class="text">Please enter details</div>
           </div>
           <div class="modal-body">
-              <form action="" class="form">
+                {% if messages %}
+                    <ul class="messages">
+                        {% for message in messages %}
+                            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+              <form method="POST" class="form" action="{% url 'signup' %}">
                   <label class="label" for="Name">Name</label>
                   <input
                       type="text"
                       placeholder="Your name"
                       class="textbox"
                       id="Name"
+                      name="username"
+                      required
                   />
 
                   <label class="label" for="EmailAddress">Email Address</label>
@@ -535,6 +403,8 @@
                       placeholder="something@example.com"
                       class="textbox"
                       id="EmailAddress"
+                      name="email"
+                      required
                   />
 
                   <label class="label" for="Password">Password</label>
@@ -542,6 +412,8 @@
                       type="password"
                       class="textbox"
                       id="Password"
+                      name="password"
+                      required
                   />
 
 
@@ -549,10 +421,12 @@
                       <input class="checkbox" type="checkbox" name="agree" id="agree" value="agree" required />
                       <label class="remember-text" for="agree">I agree to the Terms & Conditions</label>
                   </div>
-
+                  {% csrf_token %}
+                  {{ form.as_p }}
                   <div>
-                      <button id="OTPBtn" class="buttonlog login-text ">Regester</button>
+                      <button type="submit" id="OTPBtn" class="buttonlog login-text ">Register</button>
                   </div>
+
               </form>
           </div>
           <div class="ortextreg">Or Login With</div>
@@ -561,12 +435,10 @@
               <div class="login-with">
                   <button class="gbutton login-textg">
                       <img class="g-img" src="{% static 'myapp/img/google.svg' %}" />
-{#                      <img class="g-img" src="img/google.svg" />#}
                       Login with Google
                   </button>
                   <button class="applebtn login-texta">
                       <img class="a-img" src="{% static 'myapp/img/apple.svg' %}" />
-{#                      <img class="a-img" src="img/apple.svg" />#}
                       Login with Apple
                   </button>
               </div>
@@ -578,7 +450,6 @@
         <div >
             <span class="close">
                 <img class="close-img-otp" src="{% static 'myapp/img/remove.svg' %}" alt="close">
-{#                <img class="close-img-otp" src="./img/remove.svg" alt="close">#}
             </span>
             <div class="otp-header">Enter OTP</div>
             <div class="otp-text-under">We have share a code of your registered email
@@ -609,7 +480,6 @@
                          <!-- password -->
     <div id="passChangeModal" class="modal-pass-change modal-content-pass-change">
         <img class="password-change-icon" src="{% static 'myapp/img/LockIconSuccessfully.svg' %}" alt="password change">
-{#        <img class="password-change-icon" src="./img/Lock Icon Successfully.svg" alt="password change">#}
 
         <div class="password-change-text">
             <p class="password-change-text-h">Password Changed Successfully</p>
@@ -627,14 +497,12 @@
       <div class="new-footer-frame"></div>
       <div class="electro-style">
           <img src="{% static 'myapp/img/electro.svg' %}" alt="logo">
-{#          <img src="./img/electro.svg" alt="logo">#}
       </div>
 
       <div class="phone" >
         <div class="phone-img" >
           <div class="phone-img2"></div>
           <img src="{% static 'myapp/img/calling.svg' %}" alt="calling">
-{#          <img src="./img/calling.svg" alt="calling">#}
         </div>
         <div class="phone-text">
           <a class="phone-text" href="callto:(316) 555-0116">(316) 555-0116</a>
@@ -645,7 +513,6 @@
         <div class="mailto-img">
           <div class="mailto-img2"></div>
           <img src="{% static 'myapp/img/gmail.svg' %}" alt="mailto">
-{#          <img src="./img/gmail.svg" alt="mailto">#}
       </div>
         <div class="mail-text">
           <a class="mail-text" href="mailto:electro@example.com">electro@example.com</a>
@@ -657,7 +524,6 @@
           <div class="location-img" >
             <div class="location-img2" ></div>
               <img src="{% static 'myapp/img/location.svg' %}" alt="location">
-{#              <img src="./img/location.svg" alt="location">#}
           </div>
           <div class="location-text">
               4140 Parker Rd. Allentown, <br/>New Mexico 31134
@@ -720,7 +586,6 @@
             <div class="email-box">
               <div class="email-img">
                   <img src="{% static 'myapp/img/gmail.svg' %}" alt="Email">
-{#                  <img src="./img/gmail.svg" alt="Email">#}
               </div>
 
               <div class="email-form">
@@ -737,7 +602,6 @@
               <div >
                 <button class="submit-butten" type="submit">
                 <img src="{% static 'myapp/img/arrow-right.svg' %}" alt="submit">
-{#                <img src="./img/arrow-right.svg" alt="submit">#}
                 </button>
               </div>
             </div>
@@ -751,31 +615,26 @@
           <div class="visa-frame">
               <div >
                   <a href="#"><img src="{% static 'myapp/img/Visa.svg' %}" alt="Visa"> </a>
-{#                  <a href="#"><img src="./img/Visa.svg" alt="Visa"> </a>#}
               </div>
             </div>
           <div class="mastercard-frame">
               <div >
                   <a href="#"><img src="{% static 'myapp/img/Mastercard.svg' %}" alt="Mastercard"> </a>
-{#                  <a href="#"><img src="./img/Mastercard.svg" alt="Mastercard"> </a>#}
               </div>
           </div>
           <div class="gplay-frame">
               <div >
                   <a href="#"><img src="{% static 'myapp/img/GooglePay.svg' %}" alt="GooglePay"> </a>
-{#                  <a href="#"><img src="./img/GooglePay.svg" alt="GooglePay"> </a>#}
               </div>
           </div>
           <div class="amex-frame">
               <div >
                   <a href="#"><img src="{% static 'myapp/img/Amex.svg' %}" alt="Amex"> </a>
-{#                  <a href="#"><img src="./img/Amex.svg" alt="Amex"> </a>#}
               </div>
           </div>
           <div class="paypal-frame">
               <div >
                   <a href="#"><img src="{% static 'myapp/img/PayPal.svg' %}" alt="PayPal"> </a>
-{#                  <a href="#"><img src="./img/PayPal.svg" alt="PayPal"> </a>#}
               </div>
           </div>
       </div>
@@ -783,15 +642,12 @@
       <div class="media" >
         <div class="media-pic-frame">
           <a href="#" ><img src="{% static 'myapp/img/facebook.svg' %}" alt="facebook"></a>
-{#          <a href="#" ><img src="./img/facebook.svg" alt="facebook"></a>#}
         </div>
         <div class="media-pic-frame">
           <a href="#" ><img src="{% static 'myapp/img/instagram.svg' %}" alt="instagram"></a>
-{#          <a href="#" ><img src="./img/instagram.svg" alt="instagram"></a>#}
         </div>
         <div class="media-pic-frame">
           <a href="#" ><img src="{% static 'myapp/img/twitter.svg' %}" alt="twitter"></a>
-{#          <a href="#" ><img src="./img/twitter.svg" alt="twitter"></a>#}
         </div>
       </div>
       

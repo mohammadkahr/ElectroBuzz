@@ -1,3 +1,11 @@
+.adwiser-text-button-link{
+  /* color: #FFFFFF; */
+  color: #101316;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+
 .header {
     position: relative;
     width: 1440px;
@@ -972,7 +980,7 @@
 }
 
 .product-detail-text-header{
-    width: 316px;
+    width: 500px;
     height: auto;
     font-family: Montserrat;
     font-size: 30px;
@@ -987,7 +995,7 @@
 }
 
 .product-detail-text-rate{
-    width: 128px;
+    width: 200px;
     height: 30px;
     font-family: Montserrat;
     font-size: 16px;
@@ -1225,7 +1233,7 @@ input[type=number] {
 
 .product-descriptions-nav{
   position: relative;
-  width: 503px;
+  width: 520px;
   height: 44px;
   display: inline-block;
 
@@ -1294,6 +1302,8 @@ input[type=number] {
 .relatedproducts-products-p1{
     width: 262px;
     height: 447px;
+    text-decoration: none;
+    color: #101316;
     /* margin-top: 56px; */
 }
 
@@ -1322,6 +1332,7 @@ input[type=number] {
     font-size: 16px;
     font-weight: 700;
     text-align: left;
+    
     
 
 }

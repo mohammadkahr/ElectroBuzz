@@ -1,38 +1,15 @@
 from django import forms
-from .models import Product, ProductImage, ProductVideo, DiscountCode, Cart, CartItem, Category
+from django.contrib.auth.models import User
+from django.contrib.auth.forms import AuthenticationForm
 
-class ProductForm(forms.ModelForm):
-    class Meta:
-        model = Product
-        fields = ['name', 'description', 'price', 'stock', 'category']
+class CustomSignupForm(forms.ModelForm):
+    password = forms.CharField(widget=forms.PasswordInput)
 
-class ProductImageForm(forms.ModelForm):
     class Meta:
-        model = ProductImage
-        fields = ['image']
+        model = User
+        fields = ['username', 'email', 'password']
 
-class ProductVideoForm(forms.ModelForm):
-    class Meta:
-        model = ProductVideo
-        fields = ['video']
 
-class DiscountCodeForm(forms.ModelForm):
-    class Meta:
-        model = DiscountCode
-        fields = ['code', 'percentage', 'amount', 'max_discount',
-                  'applicable_products', 'applicable_categories', 'start_date', 'end_date', 'active']
-
-class CartForm(forms.ModelForm):
-    class Meta:
-        model = Cart
-        fields = ['user']
-
-class CartItemForm(forms.ModelForm):
-    class Meta:
-        model = CartItem
-        fields = ['cart', 'product', 'quantity']
-
-class CategoryForm(forms.ModelForm):
-    class Meta:
-        model = Category
-        fields = ['name', 'parent', 'description']
+class CustomLoginForm(AuthenticationForm):
+    username = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Username'}))
+    password = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Password'}))

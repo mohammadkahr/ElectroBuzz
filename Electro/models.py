@@ -1,73 +1,63 @@
-from time import timezone
+from django.core.validators import MinValueValidator
 from django.db import models
-from mptt.models import MPTTModel, TreeForeignKey
+from mptt.models import MPTTModel
+
+from django.contrib.auth.models import User
+from products.models import Product
 
 
-class Product(models.Model):
-    name = models.CharField(max_length=255)
-    description = models.TextField()
-    price = models.DecimalField(max_digits=10, decimal_places=2)
-    stock = models.PositiveIntegerField()
-    category = models.ForeignKey('Category', on_delete=models.CASCADE, related_name='products')
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    views = models.IntegerField(default=0)
-    # last_viewed = models.DateTimeField(default=timezone.now)
-
-    def __str__(self):
-        return self.name
-
-
-class ProductImage(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='images')
-    image = models.ImageField(upload_to='product_images/')
-
-
-class ProductVideo(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='videos')
-    video = models.FileField(upload_to='product_videos/')
-
-
-class DiscountCode(models.Model):
-    code = models.CharField(max_length=50, unique=True)
-    percentage = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True)
-    amount = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
-    max_discount = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
-    applicable_products = models.ManyToManyField(Product, blank=True)
-    applicable_categories = models.ManyToManyField('Category', blank=True)
-    start_date = models.DateTimeField()
-    end_date = models.DateTimeField()
-    active = models.BooleanField(default=True)
+class banner(models.Model):
+    header = models.CharField(max_length=255)
+    caption = models.CharField(max_length=1000)
+    image = models.FileField(upload_to='Electro/static/myapp/img/new', blank=True, null=True)
+    active = models.BooleanField(default=False)
+    link = models.CharField(max_length=255, blank=True, null=True)
 
     def __str__(self):
-        return self.code
+        return self.header
 
 
-class Cart(models.Model):
-    user = models.ForeignKey('auth.User', on_delete=models.CASCADE)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+class adviser(models.Model):
+    header = models.CharField(max_length=255)
+    caption = models.CharField(max_length=1000)
+    image = models.FileField(upload_to='Electro/static/myapp/img/new', blank=True, null=True)
+    active = models.BooleanField(default=False)
+    link = models.CharField(max_length=255, blank=True, null=True)
 
     def __str__(self):
-        return f"Cart of {self.user.username}"
+        return self.header
 
 
-class CartItem(models.Model):
-    cart = models.ForeignKey(Cart, on_delete=models.CASCADE, related_name='items')
+class adsWithDiscount(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    quantity = models.PositiveIntegerField()
+    description = models.CharField(max_length=500)
+    image = models.ImageField(upload_to='')
+    discount = models.DecimalField(max_digits=4, decimal_places=2)
 
     def __str__(self):
-        return f"{self.quantity} of {self.product.name}"
+        return self.product.name
 
 
-class Category(MPTTModel):
-    name = models.CharField(max_length=255)
-    parent = TreeForeignKey('self', on_delete=models.CASCADE, null=True, blank=True, related_name='children')
-    description = models.TextField(blank=True)
-
-    class MPTTMeta:
-        order_insertion_by = ['name']
+class bestSellerProduct(models.Model):
+    productName = models.ForeignKey(Product, on_delete=models.CASCADE)
+    description = models.CharField(max_length=500)
+    image = models.ImageField(upload_to='')
+    discount = models.DecimalField(max_digits=4, decimal_places=2)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    rating = models.DecimalField(max_digits=3, decimal_places=2, default=0.00, validators=[MinValueValidator(0)])
 
     def __str__(self):
-        return self.name
+        return self.productName
+
+
+class topSellingProduct(models.Model):
+    productName = models.ForeignKey(Product, on_delete=models.CASCADE)
+    description = models.CharField(max_length=500)
+    image = models.ImageField(upload_to='')
+    # discount = models.DecimalField(max_digits=4, decimal_places=2)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    rating = models.DecimalField(max_digits=3, decimal_places=2, default=0.00, validators=[MinValueValidator(0)])
+
+    def __str__(self):
+        return self.productName
+
