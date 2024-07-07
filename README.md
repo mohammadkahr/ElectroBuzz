@@ -50,5 +50,5 @@ ElectroBuzz is a digital goods e-commerce website built using HTML, CSS, JavaScr
   - JavaScript
   - Django
 
-###Contact
-  For any questions or feedback, please reach out to harandi.mohamma@gmail.com.
+### Contact
+   For any questions or feedback, please reach out to harandi.mohamma@gmail.com.
